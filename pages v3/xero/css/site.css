@@ -1,0 +1,309 @@
+﻿.xl-footertext,
+.xl-ie11supportending,
+.xl-linklist-secondary .xl-linklist--link,
+.xl-text {
+    color: #404756;
+}
+
+.xl-body {
+    background: #fff;
+}
+
+.xl-bodywrapper {
+    flex-grow: 1;
+    padding-top: 12vh;
+}
+.xl-footerwrapper {
+    margin:0 30px 30px
+}
+
+.xl-pagewrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.xl-validation{
+    font-size: .8125rem;
+}
+
+.xl-validation > ul {
+    font-size: .8125rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.xl-heading{
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 1.0625rem;
+}
+
+
+.xl-mainwrapper{
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 460px;
+}
+
+
+.xl-nav__username {
+    font-weight: bold;
+    margin-right: .25rem;
+}
+
+
+.xl-application-access {
+    border-top: solid 1px #eeeeee;
+}
+
+.xl-nav {
+    border-bottom: solid 1px #eeeeee;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.consent-description {
+    margin-left: 20px;
+}
+
+.xl-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.xl-border-top {
+    border-top: solid 1px #eee;
+}
+
+
+.panel-default {
+    text-align: left;
+}
+
+.xl-text{
+    margin: 0 0 25px;
+}
+
+.xl-footertext{
+    margin: 0;
+    width: 100%;
+}
+
+.xl-linklist{
+    list-style: none;
+    padding: 0;
+    margin: 25px auto;
+}
+
+.xl-linklist-secondary{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.xl-linklist--item{
+    font-size: .8125rem;
+    display: inline-block;
+    margin: 5px;
+}
+
+.xl-linklist--link{
+    padding: 5px;
+}
+
+.xl-linklist--link:focus,
+.xl-linklist--link:hover{
+    outline: 0;
+    text-decoration: underline;
+}
+
+.xl-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.xl-logo--svg{
+    width: 100%;
+    height: 100%;
+}
+
+.xl-label{
+    display: inline-block;
+}
+
+.xl-browser-warning {
+    border-radius: 3px;
+    background-color: #EBEDEF;
+}
+
+.xl-google-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.xl-or-separator-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.xl-or-separator-line {
+    background: currentColor;
+    height: 1px;
+    flex: 1 0 auto;
+}
+
+.xl-ie11supportending {
+    outline: none;
+    text-align: left;
+    background: #F2F3F4;
+    border-radius: 3px;
+}
+
+.xl-ie11supportending:hover > .xl-ie11supportending--linktext,
+.xl-ie11supportending:focus > .xl-ie11supportending--linktext {
+    text-decoration: underline;
+}
+
+.xl-ie11supportending--linktext {
+    color: #0078C8;
+    font-weight: bold;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+
+.xl-consentwrapper {
+    padding-top: 10vh;
+}
+
+.xl-nowrap{
+    overflow-wrap: break-word;
+}
+
+.xl-user-account-image{
+    background: url("../Image/user-account.svg") no-repeat;
+    height: 56px;
+}
+
+.xl-organisation-image{
+    background: url("../Image/organisation-data.svg") no-repeat;
+    height: 56px;
+}
+
+.xl-consent-terms{
+    font-size: .7rem;
+}
+
+.xl-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Prevent zoom issues on webkit devices */
+@supports (-webkit-overflow-scrolling:touch) {
+    .xui-textinput {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .xl-bodywrapper {
+        padding-top: 5vh;
+    }
+}
+
+.xl-bodywrapper-popup {
+    padding-top: 0;
+}
+
+.xui-contentblockitem:hover {
+    background-color: #f5f6f7;
+    cursor: pointer;
+}
+
+.xl-login-hint-message {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.xui-verticaltextinputgroup .xui-textinput:last-of-type:first-of-type {
+    border-radius: 3px;
+}
+
+.xl-form-password {
+    border-radius: 0 0 3px 3px; margin-top: -1px;
+}
+
+.xl-form-username {
+    border-radius: 3px 3px 0 0;
+}
+
+.xl-input-action {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.xl-content {
+    max-width: 340px;
+    min-width: 300px;
+}
+
+.consent-terms {
+    font-size: 11px;
+}
+
+.xl-font-size-large {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.xl-font-size-small {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.xl-row-flex {
+    display: flex;
+}
+
+.xl-consent-icon {
+    width: 46px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 12px;
+    display: flex;
+    max-height: 60px;
+}
+
+.xl-consent-copy {
+    margin-left: 4px;
+    padding: 0 8px;
+}
+
+.xl-consent-copy ul {
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.xl-consent-hyphenation {
+    hyphens: auto;
+}

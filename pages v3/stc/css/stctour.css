@@ -1,0 +1,11 @@
+﻿	body {overflow-x:hidden}
+	.tooltip-railway {position:absolute; top:220px; width:100%; height:200px; }
+	.tooltip {width:163px; max-height:206px; left:-900px; top:25px; position:absolute; background:#e1e1e1; border:1px #d1d1d1 solid;-webkit-border-radius: 0px 0px 6px 6px;-moz-border-radius: 0px 0px 6px 6px;border-radius: 0px 0px 6px 6px; color:#666666; z-index:99999999999}
+	.tooltip .top {width:203px; height:73px; position:absolute;border:0px; margin:-40px 0 0 -13px; background:transparent url('../images/tour/topRight1.png') no-repeat left top;}
+		.top-left-bg {background:transparent url('../images/tour/topLeft1.png') no-repeat 0 top !important; left:-20px}
+		.top-left-bg span{left:40px !important; display:none}
+		.tooltip .top span {font-family:'Conv_STC-Light' !important; -webkit-text-stroke: 0.5pt; display:none; -moz-text-stroke:0.5pt;text-stroke:0.5pt; color:#ffffff; margin:0 0 0 25px;font-size:12pt;line-height:30px; position:relative; z-index:99999999;}
+	.tooltip .inside {padding:30px 10px 10px 10px; .padding-top:35px; *padding-top:35px; padding-top:35px\9}
+		.tooltip .inside div {max-height:135px; overflow:hidden;}
+	.tooltip a.pink_brdr_btns {min-width:40px !important;height:15px;line-height:15px; font-size:9pt; font-weight:bold;}
+	.tour {font-size:9pt !important; font-weight:bold; padding:5px 5px 0 5px !important; line-height:15px}

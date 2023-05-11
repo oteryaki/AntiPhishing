@@ -1,0 +1,245 @@
+body {
+  font-family: 'FigtreeMedium';
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1140px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.footer-link {
+  font-size: 12px;
+  text-decoration: underline;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+#main-content {
+  min-height: calc( 100vh - 490px);
+  margin-bottom: 90px;
+}
+
+@media (max-width: 991.98px) {
+  #main-content {
+    margin-bottom: 60px;
+  }
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 40px;
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+  #header {
+    padding: 14px 25px;
+    margin-bottom: 28px;
+  }
+}
+
+#header .language {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#portal-usage {
+  font-size: 14px;
+}
+
+#portal-usage a:last-child {
+  font-weight: 500;
+  line-height: 22px;
+}
+
+#portal-usage h4 {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991.98px) {
+  #portal-usage h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #portal-usage {
+    margin-top: 53px;
+  }
+}
+
+#login-section h4 {
+  margin-bottom: 20px;
+  font-family: 'FigtreeBlack';
+}
+
+#login-section form .form-group {
+  margin-bottom: 10px;
+}
+
+#login-section form .form-group .form-control {
+  border-radius: unset;
+  font-size: 14px;
+  height: 44px;
+}
+
+#login-section form .form-group .form-control:active, #login-section form .form-group .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #000000;
+}
+
+#login-section form button {
+  width: 121px;
+  height: 40px;
+  background-color: #085184;
+  color: #ffffff;
+  border: none;
+  border-radius: unset;
+  font-size: 12px;
+  letter-spacing: 0.86px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+#login-section form a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#footer {
+  background-color: #F0F0F0;
+  padding: 60px 0;
+  height: 300px;
+}
+
+@media (max-width: 991.98px) {
+  #footer {
+    padding: 30px 0;
+    margin-top: 40px;
+    height: auto;
+  }
+}
+
+#footer .footer-logo-section {
+  position: relative;
+}
+
+#footer .footer-logo-section .link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #969696;
+  font-size: 14px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+#footer .footer-logo-section .link img {
+  width: auto;
+  margin-left: 9px;
+}
+
+#footer .new-supplier, #footer .attention {
+  font-weight: 400;
+}
+
+#footer .new-supplier p, #footer .attention p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .new-supplier {
+    margin-bottom: 30px;
+  }
+}
+
+@font-face {
+  font-family: 'FigtreeRegular';
+  src: url("../fonts/Figtree-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FigtreeBlack';
+  src: url("../fonts/Figtree-Black.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FigtreeMedium';
+  src: url("../fonts/Figtree-Medium.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FigtreeSemiBold';
+  src: url("../fonts/Figtree-SemiBold.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FigtreeBold';
+  src: url("../fonts/Figtree-Bold.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+

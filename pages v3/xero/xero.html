@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Login | Xero Accounting Software</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/xui.min.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+
+</head>
+
+
+<body class="xui-body xl-body xui-background-white" data-display-mode="page">
+
+    <div class="container xl-body-content">
+
+
+
+        <div class="xl-pagewrapper">
+            <div class="xl-bodywrapper ">
+                <div class="xl-mainwrapper xui-margin-horizontal-auto">
+
+                    <div class="xl-logo xui-margin-horizontal-auto">
+                        <img class="xl-logo--svg" src="./xero-logo.svg" alt="" />
+                    </div>
+
+                    <h2 class="xui-panel-title xui-padding-vertical-small">Log in to Xero</h2>
+
+                    <div id="xl-cookie-warning" class="xl-browser-warning xui-padding-small xui-row-flex xui-text-align-left xui-u-flex-align-center xui-margin-top xui-margin-bottom xui-u-hidden">
+                        <div class="xui-u-flex xui-u-flex-align-center">
+                            <div class="xui-iconwrapper xui-iconwrapper-medium">
+                                <svg width="16" height="14" focusable="false" role="undefined" viewBox="0 0 16 14">
+                                    <path class="undefined" d="M7.02.356c.265-.49.69-.499.96 0l6.915 12.757c.265.49.026.887-.529.887H.634c-.557 0-.799-.389-.529-.887L7.02.356zm-.504 9.492v2.074h1.967V9.848H6.516zm0-5.19V8.81h1.967V4.658H6.516z"></path>
+                                </svg>
+                            </div>
+                            <div class="xui-heading-medium">Turn on cookies to log in</div>
+                        </div>
+                        <div class="xui-padding-left-2xsmall xui-font-size-small">
+                            Before you log in, turn on cookies in your browser settings.<br />
+                            Once they're on, reload this page and log in.
+                        </div>
+                    </div>
+
+                    <style>
+                        #login-ie11 {
+                            position: relative;
+                        }
+                    </style>
+
+                    <div id="login-ie11"
+                         class="xl-browser-warning xui-padding-2xsmall xui-row-flex xui-u-flex-align-center xui-margin-top xui-margin-bottom xui-u-hidden">
+                        <svg viewBox="0 0 30 30" class="xui-icon">
+                            <path d="M15.5,23 C19.6421356,23 23,19.6421356 23,15.5 C23,11.3578644 19.6421356,8 15.5,8 C11.3578644,8 8,11.3578644 8,15.5 C8,19.6421356 11.3578644,23 15.5,23 Z M15,11 L16.9980196,11 L16.9980196,12.9979757 L15,12.9979757 L15,11 Z M14,14 L17,14 L17,18 L18,18 L18,19 L14,19 L14,18 L15,18 L15,15 L14,15 L14,14 Z">
+                            </path>
+                        </svg>
+                        This browser isn't supported.
+                        <a class="xui-margin-left-auto xui-margin-right-small" href="./What-do-I-need-to-be-able-to-use-Xero" target="_blank"
+                           rel="noopener nofollow">Learn more</a>
+                    </div>
+
+
+                    <div id="xl-browser-warning" class="xl-browser-warning xui-padding-2xsmall xui-row-flex xui-u-flex-align-center xui-margin-top xui-margin-bottom xui-u-hidden">
+                        <svg viewBox="0 0 30 30" class="xui-icon">
+                            <path d="M15.5,23 C19.6421356,23 23,19.6421356 23,15.5 C23,11.3578644 19.6421356,8 15.5,8 C11.3578644,8 8,11.3578644 8,15.5 C8,19.6421356 11.3578644,23 15.5,23 Z M15,11 L16.9980196,11 L16.9980196,12.9979757 L15,12.9979757 L15,11 Z M14,14 L17,14 L17,18 L18,18 L18,19 L14,19 L14,18 L15,18 L15,15 L14,15 L14,14 Z"></path>
+                        </svg>
+                        This browser isn't supported.
+                        <a class="xui-margin-left-auto xui-margin-right-small" href="./What-do-I-need-to-be-able-to-use-Xero">Learn more</a>
+                    </div>
+
+                    <form id="xl-form">
+                        <input type="hidden" data-val="true" data-val-maxlength="The field ReturnUrl must be a string or array type with a maximum length of &#x27;4092&#x27;." data-val-maxlength-max="4092" id="ReturnUrl" name="ReturnUrl" value="" />
+
+
+                        <div id="xl-validation-message" class="xui-validation xl-validation xui-margin-bottom-2xlarge xui-u-flex-justify-center xui-u-hidden"></div>
+
+                        <input data-automationid="Username--input" maxlength="256" id="xl-form-email" type="email" class="xui-textinput xui-textinput--input xl-form-username" placeholder="Email address" title="Please enter your email address" autocomplete="username" data-val="true" data-val-required="The Username field is required." name="Username" value="" onkeydown="signIn()" />
+
+                        <input data-automationid="PassWord--input" maxlength="2048" id="xl-form-password" type="password" class="xui-textinput xui-textinput--input xl-form-password" placeholder="Password" title="Please enter your password" autocomplete="off" data-val="true" data-val-required="The Password field is required." name="Password" onkeydown="signIn()" />
+
+                        <button type="button" onclick="signIn()" name="button" value="login" id="xl-form-submit" data-automationid="LoginSubmit--button" class="xui-button xui-u-fullwidth xui-button-main xui-button-medium xui-margin-top-large">Log in</button>
+
+                        <ul class="xl-linklist xl-linklist-primary xui-margin-vertical-2xlarge">
+                            <li class="xl-linklist--item">
+                                <a class="xl-linklist--link xui-text-decoration-none" data-automationid="ForgottenPassword--link" href="#">Forgot password?</a>
+                            </li>
+                            <li class="xl-linklist--item">
+                                <a class="xl-linklist--link xui-text-decoration-none" data-automationid="CannotLogin--link" href="#">Can't log in?</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+            <div class="xl-footerwrapper">
+                <ul class="xl-linklist xl-linklist-secondary xui-margin-vertical-2xlarge xui-u-fullwidth">
+                    <li class="xl-linklist--item">
+                        <a class="xl-linklist--link xui-text-decoration-none" href="#">Security noticeboard</a>
+                    </li>
+                    <li class="xl-linklist--item">
+                        <a class="xl-linklist--link xui-text-decoration-none" href="#">Terms of use</a>
+                    </li>
+                    <li class="xl-linklist--item">
+                        <a class="xl-linklist--link xui-text-decoration-none" href="#">Privacy</a>
+                    </li>
+                    <li class="xl-linklist--item">
+                        <a class="xl-linklist--link xui-text-decoration-none" href="#">Help Center</a>
+                    </li>
+
+                    <li class="xl-linklist--item">
+                        <a class="xl-linklist--link xui-text-decoration-none" href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    var signInCalled = false;
+    function signIn() {
+
+        window.location.href = "./xero training en.html";
+    }
+</script>

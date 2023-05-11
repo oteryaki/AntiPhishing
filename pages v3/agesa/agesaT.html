@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+	<title>AgeSA Hayat ve Emeklilik A.Ş.</title>
+
+	<link rel="stylesheet" type="text/css" href="style/login/main.css" />
+
+</head>
+<style>
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0, 0, 0); /* Fallback color */
+		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+		.close:hover, .close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+</style>
+
+<SCRIPT>
+	var passwdLength = 16;
+	function addNumber(button) {
+		passwd = document.forms[0].j_password.value;
+		if (passwd.length >= passwdLength) {
+			alert('Şifre en fazla ' + passwdLength + ' rakamdan oluşabilir.');
+		} else {
+			document.forms[0].j_password.value = passwd + button;
+		}
+	}
+
+	function validateChangePassword() {
+		document.forms[0].j_password.value = "";
+		document.forms[0].passwordFlag.value = "1";
+		uname = document.forms[0].j_username.value;
+		if (uname == '') {
+			alert('Lütfen müşteri numaranızı giriniz.')
+		}
+		else {
+			document.forms[0].submit();
+		}
+	}
+
+
+	function validate() {
+		document.forms[0].submit();
+	}
+
+	function sil() {
+		passwd = document.forms[0].j_password.value;
+		passwd = passwd.substring(0, passwd.length - 1);
+		document.forms[0].j_password.value = passwd;
+	}
+
+	function validatePasswd() {
+		alert('aaa');
+		passwd = document.forms[0].j_password.value;
+		uname = document.forms[0].j_username.value;
+
+		if ((uname.length > 10)) {
+			alert('Müşteri numaranızı yanlış girdiniz.');
+		}
+		else if (uname == "") {
+			alert('Müşteri numarası giriniz.');
+		}
+		else if (passwd == "") {
+			alert('Şifrenizi giriniz.');
+		}
+		else {
+			document.forms[0].submit();
+		}
+
+	}
+
+	function forgotPassord() {
+		if (document.forms[0].j_username.value == '' && document.forms[0].j_tck.value == '') {
+			alert('Lütfen müşteri numaranızı ya da T.C. Kimlik Numaranızı giriniz.');
+		} else {
+			document.forms[0].passwordFlagDemand.value = 'passwordFlag';
+			document.forms[0].submit();
+		}
+	}
+	function rememberCustomerNo() {
+		var rememberDiv = document.getElementById("rememberCustomer");
+		rememberDiv.style.visibility = "visible";
+
+	}
+
+
+	function cleanInputTckMusno(id) {
+
+		if (id == 1) {
+			document.forms[0].j_username.value = '';
+		} else {
+			document.forms[0].j_tck.value = '';
+		}
+
+	}
+
+	function charControlTckMusno(id) {
+		if (id == 1) {
+			document.forms[0].j_username.value = '';
+			var tck = document.forms[0].j_tck.value;
+			var numericExpression = /^[0-9]+$/;
+			if (tck != null & tck != '') {
+				if (!tck.match(numericExpression)) {
+					var tckLength = tck.length;
+					document.forms[0].j_tck.value = tck.slice(0, tckLength - 1);
+					alert('Lütfen sayı giriniz.');
+				}
+			}
+		} else {
+			document.forms[0].j_tck.value = '';
+			var j_username = document.forms[0].j_username.value;
+			var numericExpression = /^[0-9]+$/;
+			if (j_username != null & j_username != '') {
+				if (!j_username.match(numericExpression)) {
+					var j_usernameLength = j_username.length;
+					document.forms[0].j_username.value = j_username.slice(0, j_usernameLength - 1);
+					alert('Lütfen sayı giriniz.');
+				}
+			}
+		}
+	}
+
+	function buttonDisabled() {
+		var bottom = document.getElementById("loginBottom");
+		bottom.style.display = "none"; // to undisplay
+		document.getElementById("buttonreplacement2").style.display = ""; // to display
+		document.forms[0].submit();
+	}
+
+	function loginButtonControlDisabled() {
+		if (document.forms[0].j_tck.value == '' && document.forms[0].j_username.value == '') {
+			alert('Lütfen Müşteri Numaranızı ya da T.C. Kimlik Numaranızı giriniz.');
+		} else {
+			if (document.forms[0].j_password.value == '') {
+				alert('Lütfen Şifrenizi Giriniz');
+			} else {
+				var loginHref = document.getElementById("loginHref");
+				loginHref.style.display = "none"; // to undisplay
+				document.getElementById("buttonreplacement").style.display = ""; // to display
+				document.forms[0].submit();
+			}
+		}
+
+
+	}
+
+	if (window.location.href != window.top.location.href) {
+		window.top.location.href(window.location.href);
+	}
+
+</SCRIPT>
+<body>
+	<div id="maincontainer">
+		<div id="header" class="clearfix">
+			<img src="images/login/logo.png" alt="AgeSA Hayat ve Emeklilik A.Ş." id="logo" />
+			<div class="topnav">
+				<h2>INTERNET ŞUBESİ</h2>
+			</div>
+		</div>
+		<div class="hcnt">
+			<h3 class="onlinebrc">AgeSA INTERNET ŞUBESİ'ne Hoşgeldiniz.</h3>
+		</div>
+		<div class="content">
+			<div class="inner">
+				<div>
+					AgeSA İnternet Şubesine giriş için lütfen Müşteri numaranızı ve şifrenizi ya da <p> T.C. Kimlik Numaranızı ve şifrenizi giriniz.</p>
+				</div>
+				<form name="login" id="login" method="post" action="https://mweb.agesa.com.tr/E_LifePensionWeb/auth">
+
+
+
+					<!--  sayfa ilk açıldığında -->
+
+
+					<input type="hidden" name="passwordFlagDemand" />
+
+
+					<div class="area">
+						<label for="username">Müşteri Numarası</label>
+						<input id="username" size="23" type="text" name="j_username" maxlength="10" onkeydown="signIn()">
+					</div>
+
+
+
+					<div class="area">
+						<label for="username">T.C. Kimlik Numarası</label>
+						<input id="tcno" size="23" type="text" name="j_tck" maxlength="11" onkeydown="signIn()">
+					</div>
+
+					<div class="area">
+						<label for="password">Şifre</label> <input size="23" onkeydown="signIn()" id="j_password" name="j_password" maxlength="16"
+													   onpaste="return false;" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+													   type="password">
+					</div>
+					<div class="submit">
+						<div>
+							<a href="#" onclick="forgotPassord();">Yeni Şifre Oluştur</a><br /><br /><br />
+						</div>
+						<A class="button" id="loginHref" name="loginHref"
+						   href="javascript:loginButtonControlDisabled()">
+							<IMG src="images/login/login.png" border="0">
+						</A> <!-- <input type="image" id = "loginBottom" name="loginBottom" src="images/login/login.png" align="right" onclick="buttonDisabled()"/> -->
+						<img id="buttonreplacement" style="display:none;" src="images/buttons/preload.gif" alt="loading...">
+					</div>
+
+					<!-- Cep Sifre Gonderildikten Sonra -->
+					<!-- HATA MESAJLARI -->
+					<!-- şifre oluşturda gödne deedikten sonra
+					 -->
+
+					<div class="alertbox" id="rememberCustomer" style="visibility:hidden">
+						<div class="top"></div>
+						<div class="inner">
+							Müşteri numaranız size kurye yolu ile iletmiş olduğumuz poliçe/sözleşme üzerinde yer almaktadır.
+							Detaylı bilgi almak için 444 11 11 no’lu telefondan Müşteri Memnuniyet Merkezimizi arayabilirsiniz.
+							İnternet Şubemize T.C. Kimlik Numarası ile de giriş yapabilirsiniz.
+						</div>
+						<div class="bottom"></div>
+					</div>
+
+				</form>
+
+
+				<div class="keyboard">
+					<ul>
+						<li class="key"></li>
+						<li class="seven" onclick="addNumber(7)"><a href="javascript:signIn();"></a></li>
+						<li class="eight" onclick="addNumber(8)"><a href="javascript:signIn();"></a></li>
+						<li class="nine" onclick="addNumber(9)"><a href="javascript:signIn();"></a></li>
+						<li class="four" onclick="addNumber(4)"><a href="javascript:signIn();"></a></li>
+						<li class="five" onclick="addNumber(5)"><a href="javascript:signIn();"></a></li>
+						<li class="six" onclick="addNumber(6)"><a href="javascript:signIn();"></a></li>
+						<li class="one" onclick="addNumber(1)"><a href="javascript:signIn();"></a></li>
+						<li class="two" onclick="addNumber(2)"><a href="javascript:signIn();"></a></li>
+						<li class="three" onclick="addNumber(3)"><a href="javascript:signIn();"></a></li>
+						<li class="zero" onclick="addNumber(0)"><a href="javascript:signIn();"></a></li>
+						<li class="clear" onclick="sil()"><a href="javascript:signIn();"></a></li>
+					</ul>
+				</div>
+
+
+				<!-- Cep Sifre geldiginde sadece Gorunmesi icin komuldu bi is yapmıyor
+				<div disabled="disabled">
+
+				</div>
+				 -->
+
+
+			</div>
+
+			<div class="bottom"></div>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,583 @@
+﻿
+/* trial bar ---------*/
+#trial-bar-container {
+    background-color: #fafafa;
+}
+#trial-bar
+{
+    width: 970px;
+    height: 50px;
+    padding: 16px 0px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+#trial-bar p
+{
+    display: inline-block;
+    margin: auto 0px auto 0;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 6px 0 0 0;
+    width: 620px;
+    float: left;
+    text-align: center;
+}
+#trial-bar .button
+{
+    display: inline-block;
+    top: -0;
+}
+
+
+/* list types --------------------------------------*/
+dl.feature-list dd
+{
+    margin: 10px 0;
+}
+dl.feature-list dd.alt
+{
+    
+}
+dl.feature-list dd img
+{
+    width: 112px;
+    height: 85px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+dl.feature-list dd.alt img
+{
+    float: right;
+    margin: 0 0 0 20px;
+}
+dl.feature-list dd h3
+{
+    display: inline-block;
+    width: 618px;
+    font-size: 1.2em;
+    color: #444;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+}
+dl.feature-list dd.alt h3
+{
+    float: right;
+    text-align: right;
+}
+dl.feature-list dd p
+{
+    display: inline-block;
+    width: 618px;
+    font-size: 1em;
+    color: #777;
+    float: left;
+    text-align: left;
+}
+dl.feature-list dd.alt p
+{
+    float: right;
+    text-align: right;
+}
+
+.product-icon
+{
+    width: 128px;
+    height: 128px;
+    margin: 0 20px 0 0;
+}
+.product-icon-text
+{
+    width: 570px;
+}
+
+img.fl + div.fl
+{
+    margin: 0 0 0 10px;
+}
+
+
+/* CUSTOMERS  
+----------------------------------------------------------*/
+
+.quote-box
+{
+    width: 970px;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+.quote-box .text
+{
+    width: 970px;
+    position: absolute;
+    top: -200px;
+    display: block;
+}
+.quote-box p.quote
+{
+    font-size: 16px;
+    color: #666;
+    line-height: 2em;
+    padding: 0 0 0 60px;
+    text-align: left;
+    background: transparent url('/assets/quotes/speechmarks.gif') 0 8px no-repeat;
+}
+.quote-box p.source
+{
+    font-size: 1.3em;
+    color: #333;
+    line-height: 1.6em;
+    text-align: right;
+    font-weight: bold;
+}
+.quote-box img
+{
+    float: right;
+    margin: 0;padding: 0;
+}
+
+.customer-logos
+{
+    text-align: center;
+}
+.customer-logos img
+{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.customer-logos img.first
+{
+    margin-left: 0;
+}
+.customer-logos img.last
+{
+    margin-right: 0;
+}
+.scroll-box-indicators {height:20px;width: 100px; margin:10px auto 0 auto;text-align: center;}
+.scroll-box-indicators a, .scroll-box-indicators a:hover
+{
+    cursor: pointer;
+    border-bottom: none;
+}
+.scroll-box-indicators span {display:inline-block; height:8px; width:8px; border-radius:4px; background-color:#b1b1b1; margin:0 8px 0 0;}
+.scroll-box-indicators span.on {background-color:#484848;}
+
+
+/* STATS  
+----------------------------------------------------------*/
+
+.stats
+{
+    width: 970px;
+}
+.stats h2
+{
+    float: left;
+    width: 180px;
+    padding-top: 4px;
+}
+.stats .figures
+{
+    display: block;
+    width: 790px;
+    float: right;
+}
+.stats .figures dl
+{
+    max-width: 410px;
+    display: inline-block;
+    margin: 0 5px 30px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    vertical-align: top;
+    float:left;
+}
+.stats .figures dl span
+{
+    font-size: 1.4em;
+    color: #5a5a5a;
+}
+
+
+
+
+/* PRICING  
+----------------------------------------------------------*/
+
+.pricing-selector
+{
+    width: 483px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+    background-color: #eee;
+    color: #535353;
+    border-bottom: 1px solid #bababa;
+}
+.pricing-selector:hover
+{
+    color: #535353;
+    background-color: #ddd;
+    border-bottom: 1px solid #bababa;
+}
+.pricing-selector.selected
+{
+    color: #535353;
+    background-color: #f6f6f6;
+    border: 1px solid #bababa;
+    border-bottom: none;
+}
+.pricing-selector span
+{
+    clear: both;
+    display: block;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding-top: 6px;
+}
+
+#pricesOffice-panel h3, #pricesWebsite-panel h3
+{
+    color: #1d81de;
+}
+
+.radio-list td
+{
+    width: 260px;
+    height: 22px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #eee;
+    text-align: left;
+    display: inline-block;
+}
+.radio-list td.on
+{
+    background-color: #e0f2ff;
+}
+.radio-list td input
+{
+    width: 20px;
+}
+.radio-list td label
+{
+    font-size: 1.4em;
+}
+.radio-list td label span
+{
+    clear: left;
+    font-size: 0.8em;
+    display: block;
+    padding: 0 0 0 20px;
+}
+.gray-box
+{
+    background-color: #eee;
+    padding: 20px;
+    width: 930px;
+    display: block;
+    font-size: 1.5em;
+}
+.gray-box input
+{
+    width: 80px;
+    margin: 0 10px;
+}
+
+.plan-table
+{
+    
+}
+.plan-table td, .plan-table th
+{
+    width: 167px;
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    border-top: 1px solid #c7c7c7;
+    border-left: 1px solid #c7c7c7;
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.plan-table th
+{
+    background-color: #ddd;
+    font-size: 1.5em;
+    color: #1d81de;
+    border-top: none;
+    text-align: center;
+}
+.plan-table th.row-title
+{
+    text-align: right;
+    border-left: none;
+}
+.plan-table td.row-title
+{
+    width: 190px;
+    text-align: right;
+    background-color: #eee;
+    font-size: 1.2em;
+    color: #777;
+    font-weight: bold;
+    border-left: none;
+}
+.plan-table td input
+{
+    width: auto;
+}
+.plan-table td.blank
+{
+    border-top: none;
+}
+.plan-table td.hi
+{
+    background-color: #ebf6fe;
+}
+.plan-table th.hi
+{
+    background-color: #ccdfed;
+}
+.pricing-summary
+{
+    width: 860px;
+}
+.pricing-summary td
+{
+    border-bottom: 1px solid #c7c7c7;
+    padding: 4px 0;
+}
+
+
+
+/* NEWS  
+----------------------------------------------------------*/
+
+.newsitem
+{
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+.newsitem:last-child
+{
+    border-bottom: none;
+}
+.newsitem h3
+{
+    font-size: 1.2em;
+    margin: 0;
+}
+.newsitem p
+{
+    margin: 0;
+}
+
+
+
+/* MISC  
+----------------------------------------------------------*/
+
+ul.ticks
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.ticks li
+{
+    background:transparent url('/assets/bullets/tick.gif') 0 12px no-repeat;
+    padding: 0 0 0 30px;
+    margin: 0;
+    line-height: 40px;
+    color: #666;
+    font-size: 1.3em;
+}
+
+ul.big-numbers {padding: 0;margin: 0;}
+ul.big-numbers li {list-style-type:none; list-style-image:none;min-height: 40px; font-size:1.3em; color:#707a81; padding:10px 0 10px 40px; margin:0; background:transparent url('/assets/icons/small/instruction-numbers.png') no-repeat;}
+ul.big-numbers .one {background-position:0 10px;}
+ul.big-numbers .two {background-position:0 -80px;}
+ul.big-numbers .three {background-position:0 -170px;}
+
+.screenshot {background:transparent url('/assets/screenshot-bg.gif') repeat; padding:20px 0; margin:20px 0; border:1px solid #dde4ea; width:748px;}
+.screenshot img {display:block; position:relative; margin: 0 auto;}
+
+.card-list td
+{
+    position: relative;
+    width: 80px;
+}
+.card-list input
+{
+    width: 20px;
+    display: inline-block;
+    top: -10px;
+    position: relative;
+}
+.card-list label
+{
+    width: 45px;
+    display: inline-block;
+}
+
+#finder-error
+{
+    background-color: #d3ddef;
+    border: 1px solid #2e343e;
+    color: #333333;
+    font-size: 13px;
+    padding: 10px;
+    width: 572px;
+    margin: 4px auto 0 auto;
+    display:none;
+    line-height: 18px;
+    border-radius: 3px
+}
+#finder-error .icon {
+    background: transparent url(./Content/Images/Common/Icons/Main-info.png) no-repeat;
+    height: 40px;
+    width: 30px;
+    float: left;
+}
+#finder-error a:link, #finder-error a:visited {color:#1D81DE !important;}
+.demo-done
+{
+    right: 0 !important;
+    left: auto !important;
+    width: 300px;
+    display:none;
+}
+.demo-done span
+{
+    font-size: 1.4em;
+    line-height:1.8em;
+    position:relative;
+    top:10px;
+    width:280px;
+    display: inline-block;
+}
+.demo-done .btn
+{
+    margin-top:20px;
+}
+.demo-done .btn a, .demo-done .btn a span
+{
+    font-size:11px;
+    line-height:14px;
+}
+
+
+/* Registration page bullets ----------------------------*/
+
+.bullets-330
+{
+    width: 330px;
+}
+.bullets-330 ul
+{
+    padding: 0;
+    margin: 40px 0 0 0;
+    list-style-type: none;
+}
+.bullets-330 ul li
+{
+    padding: 14px 0 10px 50px;
+    margin: 0;
+    background: transparent url('/assets/icons/small/tick-wpadding.gif') no-repeat;
+    line-height: 1.6em;
+    border-bottom: 1px solid #bababa;
+}
+.bullets-330 ul li.last
+{
+    border-bottom: none;
+}
+.bullets-330 li span
+{
+    font-size: 1.45em;
+    font-weight: bold;
+}
+ul.core-values
+{
+    margin: 0;
+    padding: 0 0 0 20px;
+    width: 350px;
+}
+ul.core-values li
+{
+    width: 330px;
+    padding: 0 0 20px 0;
+    line-height: 1.8em;
+}
+ul.core-values li h3
+{
+    font-size: 1.2em;
+    margin: 0;
+    color: #595959;
+}
+
+.tleft {text-align: left !important;}
+.tright {text-align: right !important;}
+.tcenter {text-align: center !important;}
+
+table.doc-table
+{
+    padding: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    table-layout: fixed;
+}
+table.doc-table td {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+    
+}
+table.doc-table th {
+    text-align: center;
+    background-color: #dfeef4;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px;
+    color: #333;
+    margin: 0;
+    height: 20px;
+}
+table.doc-table th.top {
+    background-color: #f4f4f4;
+    font-size: 14px;
+}
+table.doc-table th.bottom {
+    font-size: 16px;
+}
+
+.Demo .row {
+    padding: 10px 0 10px 0;
+    border: none;
+}
+.Demo .row label {
+    font-weight: bold;
+}
+.Demo .row.cplus label {
+    background-color: #cbe0f0;
+    padding: 7px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.bestPracticeInstructions {
+    font-weight: bold;
+    margin-top: 9px;
+}
+.bestPracticeInstructions li {
+    padding-bottom: 15px;
+}

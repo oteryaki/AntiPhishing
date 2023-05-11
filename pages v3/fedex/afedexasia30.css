@@ -1,0 +1,74 @@
+a:link,a:active{color:#660099}
+a:visited{color:#993399}
+a:link.newsalert,a:active.newsalert,a:visited.newsalert{font-size:11px;color:#FF0000}
+a:link.white,a:active.white,a:visited.white{color:#FFFFFF}
+A.acolorwhite:link{color:#FFFFFF}
+A.acolorwhite:visited{color:#CCCCCC}
+.acolorpurple{color:#660099}
+#content body{font-size:12px;background-color:#FFFFFF;color:#000000}
+h1,h2,#content h3,h4,h5,h6{margin-top:0px;margin-bottom:0px;font-weight:normal}
+#content div, .content{font-size:12px;color:#000000}
+form{padding:0;margin:0}
+hr{height:1px;width:100%;clear:both}
+ol{margin-top:0px;margin-bottom:0px}
+ol li{margin-left:-8px}
+table{margin-left:0px;margin-top:0px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;color:#000000}
+td{font-size:12px}
+tr.resultsgray{height:30px;font-size:11px;background-color:#E6E6E6}
+tr.resultswhite{height:30px;font-size:11px;background-color:#FFFFFF}
+tr.resultsgraysmall{height:15px;font-size:11px;background-color:#E6E6E6}
+tr.resultswhitesmall{height:15px;font-size:11px;background-color:#FFFFFF}
+ul{margin-top:0px;margin-bottom:0px}
+#content .afooternav{font-size:11px;color:#660099}
+.autilitynav{font-size:11px;color:#660099}
+.articleheader{font-size:12px;color:#660099}
+.buttongray{font-size:12px}
+.buttonpurple{font-size:12px;background-color:#660099;color:#FFFFFF}
+.error{font-size:12px;color:#FF0000;font-weight:600}
+.footertext{font-size:11px;color:#000000}
+.formtext{font-size:12px;color:#000000}
+.mainheader1{font-size:18px;color:#660099;font-weight:normal}
+.mainheader2{font-size:14px;color:#999999;font-weight:normal}
+.nnform{font-family:monospace;font-size:11px;padding:0;margin:0}
+.phonenumber{color:#660099;font-weight:bold}
+.resultstableheader{color:#FFFFFF;font-size:11px;font-weight:bold}
+.resultstable{color:#000000;font-size:11px}
+.resultstablegray{background:#CCCCCC;color:#000000;font-size:11px}
+.sidenav{font-size:12px;line-height:120%}
+.big{font-size:14px}
+.small{font-size:11px}
+.stepsoff{font-size:12px;color:#999999;font-weight:600}
+.stepson{font-size:12px;color:#FFFFFF;font-weight:600}
+.subheader1{font-size:12px;color:#660099;font-weight:600}
+.subheader2{font-size:11px;color:#660099;font-weight:600}
+.subheaderblack1{font-size:12px;color:#000000;font-weight:600}
+.subheaderwhite1{font-size:12px;color:#FFFFFF;font-weight:600}
+.textgray{color:#999999}
+.contenterror{color:#FF0000;font-size:12px}
+.nav{color:#000000;font-size:12px}
+.nav A:link{color:#000000}
+.nav A:visited{color:#000000}
+.header{color:#FF6600;font-size:20px;font-weight:bold}
+.smallheader{color:#FF6600;font-size:20px;font-weight:bold}
+.smallpurpleheader{color:#660099;font-size:20px}
+.smallgreenheader{color:#339933;font-size:20px}
+.pagesubheader{font-size:14px;color:#999999;font-weight:normal}
+.pagesubheader2{color:#660099;font-size:14px;font-weight:bold}
+.subheader{color:#660099;font-size:12px;font-weight:bold}
+.content{color:#000000;font-size:12px}
+.contentbold{color:#000000;font-size:12px;font-weight:bold}
+.contentrev{color:#FFFFFF;font-size:12px}
+.contentorange{color:#FF6600;font-size:12px}
+.contentpurple{color:#660099;font-size:12px}
+.contentsmall{color:#000000;font-size:11px}
+.infoboxheader{color:#000000;font-size:11px;font-weight:bold}
+.disclaimer{color:#000000;font-size:11px}
+#content .alert{color:#FF0000;font-size:14px;font-weight:bold}
+.errorhead{color:#FF0000;font-size:14px;font-weight:bold}
+.errortext{color:#FF0000;font-size:11px;font-weight:bold}
+.warning{color:#CC3300;font-size:12px;font-weight:bold}
+INPUT.label{font-size:12px;color:#000000}
+INPUT.inputbox{font-size:12px;font-family:monospace}
+H2{font-size:18px;color:#660099;font-weight:normal}
+#content H3{color:#660099;font-size:14px;font-weight:bold;text-decoration:underline}
+SUP{font-size:10px}

@@ -1,0 +1,184 @@
+.sf-menu ul {
+	background-color: #f2f2f2;
+	height: auto;
+	min-width: 200px;
+	border: 3px solid #fb375e;
+	color:#C5C0B0;
+	display:block;
+	visibility:hidden;
+	left:0px;
+	position:absolute;
+	top:62px;
+	list-style:none;
+	padding:15px;
+	-webkit-border-radius:8px !important;
+	-moz-border-radius:8px !important;
+	border-radius:8px !important;
+	-webkit-padding-start: 5px;
+	width:auto !important;
+	z-index:77777777;
+	font-family: "BetaStcRegular", Arial, Helvetica, sans-serif;
+}
+
+
+
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li {
+	position:		relative;
+}
+.sf-menu li a{
+	background-color:#fff;
+	border:solid 2px #e5e5e5;
+	min-width:50px;
+	min-height:36px;
+	height:auto;
+	width:100%;
+	display:block;
+	margin-left:5px;
+	border-radius: 0 !important;
+	position:relative;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+}
+.sf-menu li a:hover, .sf-menu li.sfHover a{background-color:#380065;border:solid 2px #380065;}
+.sf-menu li ul span.top_arrow{margin-top:-5px;}
+
+.sf-sub-indicator {
+	display:none;
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	display:none;
+}
+
+
+/*sub menu*/
+.sf-menu ul li ul li a, .sf-menu li.sfHover ul li a {
+	display:block;
+	background-color: #FFF !important;
+	padding: 8px 3% 0px !important;
+	height:auto;
+	min-height: 22px !important;
+	width:94% !important;
+	margin-bottom: 1px !important;
+	border: 1px solid #e6e6e6 !important;
+	border-radius:2px !important;
+
+	position:relative;
+	text-align:center;
+	font-size:9pt;
+	color:#4c4c4c !important;
+}
+.sf-menu ul li ul li a:hover, .sf-menu li.sfHover ul li a:hover {
+	border: 1px solid #380065 !important;
+	color:#fb375e !important;
+}
+
+/*Custom Menus*/
+
+/*Downlaod*/
+.download .sf-menu li a{width:30px;height:30px;}
+.download .sf-menu ul, .dashboard_info .sf-menu ul {border: 3px solid #380065;left:-150px;}
+.download .sf-menu li ul span.top_arrow, .dashboard_info .sf-menu li ul span.top_arrow{
+	margin-top:-5px;
+	background-image: url(../images/purple-context-menu_arrow.png);
+	left:85%;
+
+}
+
+
+
+/* Current Invoice */
+.bill-prev-invoice{}
+.bill-prev-invoice .sf-menu li a{
+	width:135px;
+	height:36px;
+	padding: 5px 20px 5px 15px;
+	border:solid 2px #e5e5e5;
+	background-position: 97% center !important;
+}
+.bill-prev-invoice .sf-menu li a:hover, .bill-prev-invoice .sf-menu li.sfHover a{background-color:#fff;border:solid 2px #fb375e;}
+
+.bill-prev-invoice .sf-menu li ul li  a, .bill-prev-invoice .sf-menu li.sfHover  ul li  a{
+	padding-left:5px;
+	text-align:left;
+	background-image: url(../images/login_arrow.png);
+}
+.bill-prev-invoice .sf-menu  li ul li a .prev-credit-title, .bill-prev-invoice .sf-menu li.sfHover ul li a .prev-credit-title{font-size:9pt;margin-bottom:5px;}
+.bill-prev-invoice .sf-menu  li ul li a .prev-credit-value, .bill-prev-invoice .sf-menu li.sfHover ul li a .prev-credit-value{font-size:9pt;margin-bottom:5px;color:#4d4d4d;}
+.bill-prev-invoice .sf-menu  li ul a.pink_brdr_btns{
+	width:92px;
+	min-height:15px !important;
+	background-image:none;
+	height:auto !important;
+	color:#380065;
+	margin-top:15px;
+
+}
+.bill-prev-invoice .sf-menu  li ul a.pink_brdr_btns:hover{color:#fb375e !important;border:solid 2px #380065;}
+
+/*Prev Credit remove arrows*/
+.prev_credit .sf-menu li ul li  a, .prev_credit .sf-menu li.sfHover  ul li  a{
+	background-image: none !important;
+}
+
+/* Home dashboard */
+.dashboard_info .sf-menu{	background-color: transparent !important;
+	height: 20px !important;
+	min-width: 20px !important;
+	border: none;
+	color:#C5C0B0;
+	display:block;
+	left:0px;
+	position:absolute;
+	top:0px;
+	list-style:none;
+	padding:10px;
+	-webkit-border-radius:0px !important;
+	-moz-border-radius:0px !important;
+	border-radius:0px !important;
+
+	-webkit-padding-start: 0px;
+	width:auto !important;
+}
+
+.dashboard_info .sf-menu li a{
+	background-color:transparent !important;
+	border:none !important;
+	min-width:20px;
+	min-height:20px;
+	height:20px;
+	width:20px;
+	display:block;
+	margin-left: 25px;
+	border-radius:0px !important;
+	position:relative;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+}
+.dashboard_info .sf-menu ul{top:30px;}
+.dashboard_info .sf-menu li ul span.top_arrow{left:47%;}
+.dashboard_info .sf-menu ul {left: -80px;}
+
+.services_icon .sf-menu li a{
+	min-width:30px;
+	min-height:30px;
+}
+.services_icon .sf-menu ul{top:45px;left:-180px;}
+
+.ebill_info .sf-menu ul{top:-35px !important; left:104% !important;min-width:100px;}
+
+.ebill_info .sf-menu {min-width:111%;}
+
+.ebill_info .sf-menu li a{border:none;min-height:15px;min-width:15px;float:right;margin-top:-15px;}
+.ebill_info .sf-menu li ul span.top_arrow{
+	background-image: url(../images/pink-context-menu_left_arrow.png);
+	left: -17px;
+	top: 4px;
+	width: 12px;
+	height: 24px;
+	left:-12px \9;
+	top:18px \9;
+
+}

@@ -1,0 +1,517 @@
+/* Reset CSS (YUI Reset)*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+/* Reset END */
+
+.clearfix:after{content:" ";display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+.clearfix {display:inline-block;}
+/* mac hide \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide */
+.clearer{clear:both;height:0px;line-height: 0px;font-size: 0px;}
+
+body{background: #ffffff;font-family: Arial;font-size: 11px;color: #234e88;}
+a{color: #234e88;text-decoration: underline;}
+#maincontainer{
+width: 728px;
+padding: 15px 14px;
+}
+#header{
+width: 728px;
+}
+#logo{
+float: left;
+width: 167px;
+height: 51px;
+display: block;
+}
+.topnav{
+float: left;
+width: 698px;
+height: 38px;
+background: url(../../images/login/topnavbg.png) no-repeat left top;
+margin: 5px 0px 0px 0px;
+line-height: 38px;
+font-size: 15px;
+color: #234e88;
+font-family: Verdana;
+font-weight: bold;
+padding: 0px 15px;
+}
+.topnav h2{
+float: right;
+width: 111px;
+height: 38px;
+background: url(../../images/login/internet_subesi.png) no-repeat left 12px;
+text-indent: -9999px;
+}
+.topnav h2.orcpt{
+width: 144px;
+background: url(../../images/login/orcpt.png) no-repeat left 12px;
+}
+h3.onlinebrc{
+float: left;
+width: 358px;
+height: 33px;
+background: url(../../images/login/hosgeldiniz.png) no-repeat left top;
+text-indent: -9999px;
+}
+.hcnt{
+float: left;
+width: 728px;
+margin: 11px 0px 2px 0px;
+}
+h3.oreceipt{
+float: left;
+width: 628px;
+height: 33px;
+background: url(../../images/login/oreceipt.png) no-repeat left top;
+text-indent: -9999px;
+}
+.backlink{
+float: right;
+width: 77px;
+height: 13px;
+outline: none;
+background: url(../../images/login/back.png) no-repeat left top;
+margin: 10px 0px 0px 0px;
+}
+.signout{
+float: right;
+width: 86px;
+height: 19px;
+background: url(../../images/login/exit.png) no-repeat left top;
+outline: none;
+margin: 16px 0px 0px 0px;
+}
+div.content{
+float: left;
+width: 728px;
+background: #f1f5f8 url(../../images/login/content_top_bg.png) no-repeat left top;
+padding: 5px 0px 0px 0px;
+margin: 0px 0px 13px 0px;
+}
+div.content div.inner{
+float: left;
+width: 694px;
+padding: 15px 17px;
+font-size: 12px;
+font-family: Verdana;
+color: #234e88;
+background: url(../../images/login/content_inner_bg.png) repeat-y left top;
+}
+div.content div.inner p.maintitle{
+font-size: 12px;
+line-height: 20px;
+border-bottom: 1px solid #E6EAED;
+padding: 0px 0px 5px 0px;
+margin: 0px 0px 15px 0px;
+}
+div.content div.bottom{
+float: left;
+width: 728px;
+height: 5px;
+line-height: 5px;
+font-size: 0px;
+background: transparent url(../../images/login/content_bottom_bg.png) no-repeat left top;
+}
+.content form{
+float: left;
+width: 288px;
+padding: 0px 16px 0px 0px;
+border-right: 1px solid #e6eaed;
+}
+.content form.main{
+border: 0px;
+padding: 0px;
+width: 694px;
+}
+div.area{
+float: left;
+border-bottom: 1px solid #e6eaed;
+padding: 7px 0px;
+width: 288px;
+}
+.content form label{
+float: left;
+width: 130px;
+font-size: 12px;
+color: #234e88;
+font-family: Verdana;
+line-height: 22px;
+}
+div.area input{
+float: left;
+border: 0px;
+width: 142px;
+border-top: 1px solid #f7f9fb;
+background: #ffffff;
+color: #234e88;
+font-size: 12px;
+line-height: 13px;
+padding: 4px 4px;
+font-family: Verdana;
+}
+.submit{
+float: left;
+width: 288px;
+margin: 10px 0px 0px 0px;
+line-height: 17px;
+}
+.submit .left{
+float: left;
+width: 180px;
+}
+#login a{font-size: 11px;font-family: Arial;color: #234e88;text-decoration: underline;font-weight: bold;}
+#lgn{width: 61px;height: 23px;margin: 0px auto;display:block;outline: none;}
+
+.enter{
+float: left;
+width: 288px;
+margin: 10px 0px 10px 0px;
+}
+
+div.rightcnt{float: right;width:370px;padding: 0px 0px 0px 19px;}
+div.rightcnt p{font-size: 11px;line-height: 18px;}
+
+div.infobox{
+float: left;
+width: 351px;
+margin: 10px 0px 0px 0px;
+overflow: hidden;
+}
+div.infobox div.top{
+float: left;
+width: 351px;
+height: 7px;
+line-height: 7px;
+font-size: 0px;
+background: url(../../images/login/infobox_top_bg.png) no-repeat left top;
+}
+div.infobox div.bottom{
+float: left;
+width: 351px;
+height: 9px;
+line-height: 9px;
+font-size: 0px;
+background: url(../../images/login/infobox_bottom_bg.png) no-repeat left top;
+}
+div.infobox div.infoinner{
+float: left;
+width: 320px;
+padding: 8px 16px 8px 15px;
+background: url(../../images/login/infobox_inner_bg.png) repeat-y left top;
+}
+div.infobox div.infoinner h3{
+width: 320px;
+font-size: 13px;
+line-height: 22px;
+padding: 0px 0px 3px 0px;
+color: #234e88;
+border-bottom: 1px solid #eef1f3;
+font-weight: bold;
+}
+div.infobox div.infoinner ul{
+width: 100%;
+}
+div.infobox div.infoinner ul li{
+line-height: 17px;
+font-size: 11px;
+color: #234e88;
+padding: 0px 0px 0px 14px;
+background: url(../../images/login/slarrow.png) no-repeat left top;
+margin: 5px 0px;
+}
+div.infobox div.infoinner ul li a{
+color: #234e88;
+text-decoration: underline;
+}
+
+div.keyboard{float: left;width: 193px;border-right: 1px solid #e6eaed;padding: 0px 19px;}
+div.keyboard ul{float: left;width: 87px;margin: 0px 8px 0px 0px;}
+div.keyboard ul li{float: left;width: 27px;height: 23px;background: url(../../images/login/keyboard.png) no-repeat left top;margin: 0px 3px 3px 0px;}
+div.keyboard ul li a{float: left;width: 27px;height: 23px;outline: none;}
+div.keyboard ul li.key{width: 87px;height: 23px;background-position: 0px 0px;}
+div.keyboard ul li.key a{width: 87px;height: 23px;}
+div.keyboard ul li.seven{background-position: 0px -26px;}
+div.keyboard ul li.eight{background-position: -30px -26px;}
+div.keyboard ul li.nine{background-position: -60px -26px;margin-right: 0px;}
+div.keyboard ul li.four{background-position: 0px -52px;}
+div.keyboard ul li.five{background-position: -30px -52px;}
+div.keyboard ul li.six{background-position: -60px -52px;margin-right: 0px;}
+div.keyboard ul li.one{background-position: 0px -78px;}
+div.keyboard ul li.two{background-position: -30px -78px;}
+div.keyboard ul li.three{background-position: -60px -78px;margin-right: 0px;}
+div.keyboard ul li.zero{background-position: 0px -104px;}
+div.keyboard ul li.clear{background-position: -30px -104px;}
+div.keyboard p{font-size: 11px; color: #234E88;}
+
+div.alertbox{
+float: left;
+width: 287px;
+margin: 15px 0px 0px 0px;
+}
+div.alertbox div.top{
+float: left;
+width: 287px;
+height: 6px;
+line-height: 6px;
+font-size: 0px;
+background: transparent url(../../images/login/alertbox_top_bg.png) no-repeat left top;
+}
+div.alertbox div.bottom{
+float: left;
+width: 287px;
+height: 8px;
+line-height: 8px;
+font-size: 0px;
+background: transparent url(../../images/login/alertbox_bottom_bg.png) no-repeat left top;
+}
+div.alertbox div.inner{
+float: left;
+width: 253px;
+background: transparent url(../../images/login/alertbox_inner_bg.png) repeat-y left top;
+padding: 9px 18px 7px 16px;
+font-size: 12px;
+font-family: Verdana;
+color: #234E88;
+line-height: 16px;
+}
+div.alertbox div.inner a{
+color: #234E88;
+text-decoration: underline;
+}
+.mainexp{
+margin: 0px 0px 15px 0px;
+color: #505050;
+font-size: 11px;
+line-height: 18px;
+}
+form.main div.area{
+width: 300px;
+border-bottom: 0px;
+margin-bottom: 10px;
+}
+form.main label{
+width: auto;
+padding: 0px 5px 0px 0px;
+}
+div.abtn{
+float: left;
+width: auto;
+padding: 7px 0px;
+margin: 0px 0px 0px -25px;
+}
+div.abtn input{
+width: auto;
+height: auto;
+}
+table{
+width: 100%;
+font-size: 12px;
+font-family: Verdana;
+}
+table thead tr td,table tr td table thead tr td,.thead{
+background: #d4e3ee;
+border-bottom: 1px solid #eef4f8;
+color: #335b9d;
+padding: 3px 10px;
+line-height: 20px;
+font-weight: bold;
+}
+table tbody tr td{
+padding: 3px 10px;
+line-height: 20px;
+color: #505050;
+vertical-align: middle;
+}
+
+.note{
+margin: 10px 0px 0px 0px;
+background: #ffffff;
+color: #505050;
+padding: 10px;
+line-height: 16px;
+font-size: 11px;
+}
+.note a{
+color: #505050;
+text-decoration: underline;
+}
+.cntrbtns{
+width: 165px;
+height: 23px;
+margin: 0px auto 10px;;
+}
+
+
+
+/* Date Picker START */
+a.dp-choose-date {
+float: left;
+width: 32px;
+height: 24px;
+display: block;
+text-indent: -2000px;
+overflow: hidden;
+background: url(../../images/login/datepick.png) no-repeat left center; 
+}
+a.dp-choose-date.dp-disabled {
+background-position: 0 -20px;
+cursor: default;
+}
+/* makes the input field shorter once the date picker code
+* has run (to allow space for the calendar icon
+*/
+input.dp-applied {
+width: 140px;
+float: left;
+}
+#query{
+position: relative;
+top: 6px;
+margin: 0px 0px 0px 10px;
+width: 56px;
+height: 19px;
+outline: none;
+}
+
+table.jCalendar {
+	border: 1px solid #000;
+	background: #d4e3ee;
+    border-collapse: separate;
+    border-spacing: 2px;
+	font-size: 10px;
+	font-family: Helvetica;
+}
+table.jCalendar th {
+	background: #335B9D;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 5px;
+}
+
+table.jCalendar td {
+	background: #F1F5F8;
+	color: #335B9D;
+	padding: 3px 5px;
+	text-align: center;
+	font-size: 10px;
+	line-height: normal;
+}
+table.jCalendar td.other-month {
+	background: #cbd5dd;
+	color: #fff;
+}
+table.jCalendar td.today {
+	background: #335B9D;
+	color: #fff;
+}
+table.jCalendar td.selected {
+	background: #335B9D;
+	color: #fff;
+}
+table.jCalendar td.selected.dp-hover {
+	background: #335B9D;
+	color: #fff;
+}
+table.jCalendar td.dp-hover,
+table.jCalendar tr.activeWeekHover td {
+	background: #fff;
+	color: #335B9D;
+}
+table.jCalendar tr.selectedWeek td {
+	background: #335B9D;
+	color: #fff;
+}
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover {
+	background: #cbd5dd;
+	color: #fff;
+}
+table.jCalendar td.unselectable,
+table.jCalendar td.unselectable:hover,
+table.jCalendar td.unselectable.dp-hover {
+	background: #335B9D;
+	color: #fff;
+}
+
+div.dp-popup {
+	position: relative;
+	background: #d4e3ee;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	padding: 2px;
+	width: 171px;
+	line-height: 1.2em;
+}
+div#dp-popup {
+	position: absolute;
+	z-index: 199;
+}
+div.dp-popup h2 {
+	font-size: 10px;
+	text-align: center;
+	margin: 2px 0;
+	padding: 0;
+	color: #335B9D;
+	font-weight: bold;
+}
+a#dp-close {
+	font-size: 11px;
+	padding: 4px 0;
+	text-align: center;
+	display: block;
+}
+a#dp-close:hover {
+	text-decoration: underline;
+}
+div.dp-popup a {
+	color: #335B9D;
+	text-decoration: none;
+	padding: 3px 2px 0;
+	font-weight: bold;
+}
+div.dp-popup div.dp-nav-prev {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-prev a {
+	float: left;
+}
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a {
+	cursor: pointer;
+}
+div.dp-popup div.dp-nav-prev a.disabled, div.dp-popup div.dp-nav-next a.disabled {
+	cursor: default;
+}
+div.dp-popup div.dp-nav-next {
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-next a {
+	float: right;
+}
+div.dp-popup a.disabled {
+	cursor: default;
+	color: #aaa;
+}
+div.dp-popup td {
+	cursor: pointer;
+}
+div.dp-popup td.disabled {
+	cursor: default;
+}
+/* Date Picker END */

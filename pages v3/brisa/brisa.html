@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="../../assets/"
+      data-template="vertical-menu-template-free">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Oops! That was Phishing!</title>
+    <meta name="description" content="" />
+
+    <style>
+
+        .boxx {
+            width: 64px;
+            height: 64px;
+            margin-top: 96px;
+        }
+
+        .login_panel h1 {
+            width: 100%;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+            line-height: 100%;
+            border-bottom: 1px solid #bbb;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            padding-bottom: 7px;
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../template\sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/js/config.js"></script>
+
+    <!-- authwebmail css file-->
+    <script type="text/javascript">
+        function resizeIframe(obj) {
+            obj.style.height = 0;
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/jquery/jquery.js"></script>
+    <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
+
+</head>
+<body style="background-image: url('./brisa.png'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 70%">
+    <main id="content" role="main">
+
+        <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row mt-4"></div>
+                <div class="row">
+                    <!-- Basic -->
+                    <div class="col-md-3 mt-5"></div>
+                    <div class="col-md-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="nav-align-top mb-14">
+                                    <div class="tab-pane fade show active" id="navs-top-home" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-3">
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <img src="./logo.jpg" />
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                            </div>
+                                            <div class="col-md-8 login_panel">
+                                                <h1>Sign In</h1>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="text" style="width:215%" onkeydown="signIn()" placeholder="Username">
+                                                        <input class="mt-1" type="text" style="width:215%" onkeydown="signIn()" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-4"></div>
+                                                <div class="row mt-3">
+                                                    <div class=" col-md-6">
+                                                    </div>
+                                                    <div class=" col-md-6">
+                                                        <button type="button" class="btn  btn-primary" onclick="signIn()"> Login </button>
+                                                        <button type="button" class="btn  btn-secondary">Reset </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--alt-->
+                </div>
+            </div>
+
+    </main>
+    <div id="ex-020-c" class="boxx" style="position:absolute; left: 100px; top: 160px;"></div>
+    <div id="ex-020-b" class="boxx" style="position: absolute; left: 500px; top: 600px;"></div>
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/js/bootstrap.js"></script>
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <!-- Main JS -->
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    var signInCalled = false;
+    function signIn() {
+
+        window.location.href = "./brisa training en.html";
+    }
+</script>

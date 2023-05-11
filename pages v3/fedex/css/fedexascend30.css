@@ -1,0 +1,313 @@
+a:link, a:active {
+                color: #660099;
+}
+
+a:visited {
+                color: #993399;
+}
+
+a:link.newsalert, a:active.newsalert, a:visited.newsalert {
+                font-size: 11px;
+                color: #FF0000;
+}
+
+a:link.white, a:active.white, a:visited.white {
+                color: #FFFFFF;
+}
+
+#content {
+    padding:20px 10px 10px;
+}
+
+
+#content body {
+                font-family: Arial, Helvetica, Verdana, sans-serif;
+                font-size: 12px;
+                background-color: #FFFFFF;
+                color: #000000;
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px; 
+}
+
+#content h1,#content h2,#content h3,#content h4,#content h5,#content h6 {
+                font-family: Arial, Helvetica, Verdana, sans-serif;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-weight: normal;
+}
+
+#content p, .content {
+                font-family: Arial, Helvetica, Verdana, sans-serif;
+                font-size: 12px;
+                color: #000000;
+}
+#content div{
+    font-family: Arial, Helvetica, Verdana, sans-serif;font-size: 12px;
+}
+
+form {
+                padding: 0;
+                margin: 0;
+}
+
+hr {
+                height: 1px;
+                width: 100%;
+                clear: both;
+}
+
+ol {
+                margin-top: 0px;
+                margin-bottom: 0px;
+}
+
+ol li {
+                margin-left: -8px;
+}
+
+sup {
+                font-size: 75%;
+}
+
+table {
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #000000;
+}
+
+td {
+                font-family: Arial, Helvetica, Verdana, sans-serif;
+                font-size: 12px;
+}
+
+tr.resultsgray {
+                height: 30px;
+                font-size: 11px;
+                background-color: #E6E6E6;
+}
+
+tr.resultswhite {
+                height: 30px;
+                font-size: 11px;
+                background-color: #FFFFFF;
+}
+
+tr.resultsgraysmall {
+                height: 15px;
+                font-size: 11px;
+                background-color: #E6E6E6;
+}
+
+tr.resultswhitesmall {
+                height: 15px;
+                font-size: 11px;
+                background-color: #FFFFFF;
+}
+
+ul {
+                margin-top: 0px;
+                margin-bottom: 0px;
+}
+
+#content .afooternav {
+                font-size: 11px;
+                color: #660099;
+}
+
+.autilitynav {
+                font-size: 11px;
+                color: #660099;
+}
+
+.articleheader {
+                font-size: 11px;
+                color: #660099;
+}
+
+.boldlink {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: #660099;
+                text-decoration: none;
+}
+
+.buttongray {
+                font-size: 12px;
+}
+
+.buttonpurple {
+                font-size: 12px;
+                background-color: #660099;
+                color: #FFFFFF;
+}
+
+.error {
+                font-size: 12px;
+                color: #FF0000;
+                font-weight: 600;
+}
+
+.footertext {
+                font-size: 11px;
+                color: #000000;
+}
+
+.footnote {
+                font-size: 70%;
+                vertical-align: super;
+}
+
+
+.formtext {
+                font-family: 'Arial', helvetica, Verdana, Sans-serif;
+                font-size: 12px;
+                color: #000000;
+}
+
+.mainheader1 {
+                font-size: 18px;
+                color:#660099;
+                font-weight: normal;
+}
+
+.mainheader2 {
+                font-size: 14px;
+                color: #999999;
+                font-weight: normal;
+}
+
+.nnform {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 11px;
+                padding: 0;
+                margin: 0;
+}
+
+.nnform2 {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 11px;
+                padding-top: 1px;
+                margin-top: 0;
+                vertical-align: top;
+}
+
+.phonenumber {
+                color: #660099;
+                font-weight: bold;
+}
+
+.resultstableheader{
+                color:#FFFFFF;
+                font-family:Arial, Helvetica, Verdana, sans-serif;
+                font-size:11px;
+                font-weight:bold;
+}
+
+.resultstable{
+                color:#000000;
+                font-family:Arial, Helvetica, Verdana, sans-serif;
+                font-size:11px;
+}
+
+.resultstablegray{
+                background:#CCCCCC;
+                color:#000000;
+                font-family:Arial, Helvetica, Verdana, sans-serif;
+                font-size:11px;
+}
+
+.sidenav {
+                font-size: 11px;
+                line-height: normal;
+
+}
+
+.small {
+                font-size: 11px;
+}
+
+.stepsoff {
+                font-size: 12px;
+                color: #999999;
+                font-weight: 600;
+}
+
+.stepson {
+                font-size: 12px;
+                color: #FFFFFF;
+                font-weight: 600;
+}
+
+.sectionheader {
+    font-family:Arial, Helvetica, Verdana, sans-serif;
+                font-size: 13px;
+                color:#660099;
+                font-weight: 600;
+}
+
+.subheader1 {
+                font-size: 12px;
+                color:#660099;
+                font-weight: 600;
+}
+
+.subheader2 {
+                font-size: 11px;
+                color:#660099;
+                font-weight: 600;
+}
+
+.subheaderblack1 {
+                font-size: 12px;
+                color: #000000;
+                font-weight: 600;
+}
+
+.subheaderwhite1 {
+                font-size: 12px;
+                color: #FFFFFF;
+                font-weight: 600;
+}
+.subheaderblack2 {
+                font-size: 12px;
+                color: #000000;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.right-to-left {
+        direction:rtl;
+        unicode-bidi: bidi-override;
+}
+.left-to-right {
+        direction:ltr;
+        unicode-bidi: bidi-override;
+}
+.rateError {
+	padding-top: 10px;
+}
+.rateError label {
+	color: #f00;
+	font-size:13px;
+	font-weight:bold;
+	padding-left:10px;
+	width:700px;
+}
+.alerticon {
+	background-position: -0px -0px;
+	background-repeat:no-repeat;
+	padding:0 0 0 9px;
+	height: 15px;
+	width: 15px;
+	float: left;
+}
+.myfedex:focus, .adaerror:focus, .tooltip:focus, #invalidusererror:focus, #usernameerror:focus, .moduleHeaderNonCollapsable:focus, .alertmsg:focus, .error:focus{
+	outline:1px dashed #660099;
+}

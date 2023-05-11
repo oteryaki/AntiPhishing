@@ -1,0 +1,233 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="description" content="Temsa">
+    <meta name="author" content="Temsa">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script>
+        function kontrolkullanici_tr() {
+            if (Form_tr.j_user.value == '') {
+                alert('Kullanıcı adınızı giriniz');
+                return false;
+            }
+            if (Form_tr.j_password.value == '') {
+                alert('Parolanızı giriniz');
+                return false;
+            }
+        }
+
+        function kontrolkullanici_en() {
+
+            if (Form_en.j_user.value == '') {
+                alert('Please enter your username');
+                return false;
+            }
+
+            if (Form_en.j_password.value == '') {
+                alert('Please enter your password');
+                return false;
+
+            }
+
+        }
+
+
+        function teknik() {
+            var nVer = navigator.appVersion;
+            var nAgt = navigator.userAgent;
+            var browserName = navigator.appName;
+            var fullVersion = '' + parseFloat(navigator.appVersion);
+            var majorVersion = parseInt(navigator.appVersion, 10);
+            var nameOffset, verOffset, ix;
+
+            // In Opera, the true version is after "Opera" or after "Version"
+            if ((verOffset = nAgt.indexOf("OPR")) != -1) {
+                browserName = "Opera";
+                fullVersion = nAgt.substring(verOffset + 4);
+                if ((verOffset = nAgt.indexOf("Version")) != -1)
+                    fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In MSIE, the true version is after "MSIE" in userAgent
+            else if ((verOffset = nAgt.indexOf("MSIE")) != -1) {
+                browserName = "Microsoft Internet Explorer";
+                if (nAgt.indexOf("Trident/6.0") != -1) {
+                    fullVersion = "10.0"
+                } else if (nAgt.indexOf("Trident/5.0") != -1) {
+                    fullVersion = "9.0"
+                } else if (nAgt.indexOf("Trident/4.0") != -1) {
+                    fullVersion = "8.0";
+                } else {
+                    fullVersion = nAgt.substring(verOffset + 5);
+                }
+            }
+            // In Yandex, the true version is after "YaBrowser"
+            else if ((verOffset = nAgt.indexOf("YaBrowser")) != -1) {
+                browserName = "Yandex";
+                fullVersion = nAgt.substring(verOffset + 10);
+            }
+            // In Chrome, the true version is after "Chrome"
+            else if ((verOffset = nAgt.indexOf("Chrome")) != -1) {
+                browserName = "Chrome";
+                fullVersion = nAgt.substring(verOffset + 7);
+            }
+            // In Safari, the true version is after "Safari" or after "Version"
+            else if ((verOffset = nAgt.indexOf("Safari")) != -1) {
+                browserName = "Safari";
+                fullVersion = nAgt.substring(verOffset + 7);
+                if ((verOffset = nAgt.indexOf("Version")) != -1)
+                    fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In Firefox, the true version is after "Firefox"
+            else if ((verOffset = nAgt.indexOf("Firefox")) != -1) {
+                browserName = "Firefox";
+                fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In most other browsers, "name/version" is at the end of userAgent
+            else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) <
+                (verOffset = nAgt.lastIndexOf('index.html'))) {
+                browserName = nAgt.substring(nameOffset, verOffset);
+                fullVersion = nAgt.substring(verOffset + 1);
+                if (browserName.toLowerCase() == browserName.toUpperCase()) {
+                    browserName = navigator.appName;
+                }
+            }
+            // trim the fullVersion string at semicolon/space if present
+            if ((ix = fullVersion.indexOf(";")) != -1)
+                fullVersion = fullVersion.substring(0, ix);
+            if ((ix = fullVersion.indexOf(" ")) != -1)
+                fullVersion = fullVersion.substring(0, ix);
+
+            majorVersion = parseInt('' + fullVersion, 10);
+            if (isNaN(majorVersion)) {
+                fullVersion = '' + parseFloat(navigator.appVersion);
+                majorVersion = parseInt(navigator.appVersion, 10);
+            }
+
+            var wholeMsg = browserName + " " + fullVersion;
+
+            alert(wholeMsg);
+
+        }
+    </script>
+    <script>
+        function toEN(ID) {
+
+            document.getElementById('TR').style.display = 'none';
+            document.getElementById('EN').style.display = 'block'
+            document.title = 'Welcome to Temsa Portal';
+               < !--  var randomnumber = Math.floor((Math.random() * 5) + 1);
+            --> $("#randomimage_en").attr("src", "assets/image/randomimage/" + randomnumber.toString() + ".jpg");
+        }
+
+        function toTR(ID) {
+
+            document.getElementById('EN').style.display = 'none';
+            document.getElementById('TR').style.display = 'block';
+            document.title = 'Temsa Portali\'ne Hoşgeldiniz';
+             < !--    var randomnumber = Math.floor((Math.random() * 5) + 1);
+            --> $("#randomimage_tr").attr("src", "assets/image/randomimage/" + randomnumber.toString() + ".jpg");
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "/fileshare/getlist",
+                success: function (returnData) {
+
+                    var randomnumber = Math.floor((Math.random() * returnData.length));
+
+                    $("#randomimage_tr").attr("src", returnData[randomnumber].filelink);
+                    $("#randomimage_en").attr("src", returnData[randomnumber].filelink);
+
+
+                < !--$("#randomimage_tr").attr(returnData.lenght + randomnumber.toString() + ".jpg");
+                    --> $("#randomimage_en").attr(returnData.lenght + randomnumber.toString() + ".jpg");
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: " + textStatus);
+
+                }
+            })
+        });
+
+    </script>
+    <title>Temsa Portali'ne Hoşgeldiniz</title>
+</head>
+
+<body>
+
+    <div id="EN" style="clear:both">
+        <header id="header">
+            <a href="#" alt="TEMSA">
+                <img src="assets/image/logo.png">
+            </a>
+            <a href="#" onclick="toTR('TR');" class="language tr"> TR </a>
+        </header>
+
+        <main id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-12 order-lg-1 order-2">
+                        <div id="portal-usage">
+                            <img id="randomimage_en" />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 offset-lg-1 offset-md-0 order-lg-2 order-1">
+                        <div id="login-section">
+                            <h4>Portal User Login</h4>
+                            <form id="Form_en">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="j_user" id="exampleInputText" aria-describedby="textHelp" placeholder="Username" onkeydown="signIn()">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="j_password" id="exampleInputPassword1" placeholder="Password" onkeydown="signIn()">
+                                </div>
+                                <button id="loginButton" type="submit" name="sbmt" class="btn btn-primary" onclick="signIn()">LOGIN</button>
+                                <a>Forgot Password</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- /CONTENT -->
+
+        <script type="text/javascript">
+            var language = window.navigator.userLanguage || window.navigator.language;
+            if (language != "TR") {
+
+                document.getElementById('EN').style.display = 'block';
+                document.getElementById('TR').style.display = 'none'
+                document.title = 'Welcome to Temsa Portal';
+                   < !--  var randomnumber = Math.floor((Math.random() * 5) + 1);
+                --> $("#randomimage_en").attr("src", "assets/image/randomimage/" + randomnumber.toString() + ".jpg");
+
+            } else {
+
+                document.getElementById('EN').style.display = 'none';
+                document.getElementById('TR').style.display = 'block';
+                document.title = 'Temsa Portali\'ne Hoşgeldiniz';
+                   < !--  var randomnumber = Math.floor((Math.random() * 5) + 1);
+                --> $("#randomimage_tr").attr("src", "assets/image/randomimage/" + randomnumber.toString() + ".jpg");
+            }
+
+        </script>
+
+        <script src="assets/js/plugins.js"></script>
+</body>
+
+</html>
+

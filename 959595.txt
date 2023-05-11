@@ -1,0 +1,8 @@
+If you're not sure whether the login page you're on is legitimate, you should not fill in your private information.
+
+In phishing websites it is often that some of the features of the websites are not working as intended. If you try to click on the menu button, you can see that it isn't working.
+
+	function signIn() {
+
+        	window.location.href = "./govia training en.html";
+	}

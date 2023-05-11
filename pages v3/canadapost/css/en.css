@@ -1,0 +1,117 @@
+﻿.HomePageDotArrow {
+    position:absolute;
+    left:140px;
+    top:199px;
+    background: transparent url(./Images/Common/bg/arrow.png) no-repeat;
+    height: 63px;
+    width: 37px;
+}
+.HomePageDotArrowl {
+    position:absolute;
+    left:122px;
+    top:199px;
+    background: transparent url(./Images/Common/bg/arrow-left.png) no-repeat;
+    height: 88px;
+    width: 55px;
+}
+
+.HomePageDotArrowr {
+    position:absolute;
+    right:120px;
+    top:199px;
+    background: transparent url(./Images/Common/bg/arrow-right.png) no-repeat;
+    height: 88px;
+    width: 55px;
+}
+.onoff .on {
+    float:left;
+    height:100%;
+    width:50%;
+    position:absolute;
+    background-image:url(./images/common/sprites/switch-sprite.png);
+    background-position: -183px 0;
+    background-repeat:no-repeat;
+
+}
+.onoff .off {
+    float:left;
+    height:100%;
+    width:50%;
+    position:absolute;
+    margin-left:60px;
+    background-image:url(./images/common/sprites/switch-sprite.png);
+    background-repeat:no-repeat;
+    background-position: -122px 0px;
+}
+.onoff .slider {
+    position:absolute;
+    width:60px;
+    height:32px;
+    background-image:url(./images/common/sprites/switch-sprite.png);
+    background-position: -58px 0;
+    background-repeat:no-repeat;
+    margin-left:0px;
+    z-index:9;
+}
+.StatusToggle .running {
+    float:left;
+    height:100%;
+    width:50%;
+    position:absolute;
+    background-image:url(./images/common/sprites/switch-sprite.png);
+    background-position: -183px -32px;
+    background-repeat:no-repeat;
+
+}
+.StatusToggle .paused {
+    float:left;
+    height:100%;
+    width:50%;
+    position:absolute;
+    margin-left:60px;
+    background-image:url(./images/common/sprites/switch-sprite.png);
+    background-repeat:no-repeat;
+    background-position: -122px -32px;
+}
+.StatusToggle .slider {
+    position:absolute;
+    width:60px;
+    height:32px;
+    background-image:url(./images/common/sprites/switch-sprite.png);
+    background-position: -58px 0;
+    background-repeat:no-repeat;
+    margin-left:0px;
+    z-index:9;
+}
+.preAdd {
+    width: 400px !important;
+}
+
+#integrate-with li.first{ width: 250px !important;}
+#integrate-with li.second{ width: 250px !important; }
+#integrate-with li.third{ width: 170px !important;}
+#integrate-with li.fourth{ width: 170px !important;margin-right: 40px;}
+#integrate-with li.last{ width: auto;text-align: right;}
+
+
+#pcainput_ht97hu28tj75ke429857 {
+    width: 496px;
+}
+#lsb1 {
+    width: 194px;
+}
+#laafwi1 {
+    line-height: 22px; font-size: 14px; margin-top: 13px;
+}
+#laafwi2 {
+    margin-top:15px;
+}
+#laafwi3 {
+    margin-top:5px;
+}
+#laafwi4 {
+    margin-top:35px;
+}
+#laafwi5 {
+    margin-top:35px;
+}

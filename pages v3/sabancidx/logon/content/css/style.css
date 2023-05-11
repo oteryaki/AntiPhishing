@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'hr-web';
+  src:  url('fonts/hr-webaa46.html?il6rw1');
+  src:  url('fonts/hr-webaa46.html?il6rw1#iefix') format('embedded-opentype'),
+    url('fonts/hr-webaa46-2.html?il6rw1') format('truetype'),
+    url('fonts/hr-webaa46-3.html?il6rw1') format('woff'),
+    url('fonts/hr-webaa46.svg?il6rw1#hr-web') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="hr-web-"], [class*=" hr-web-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hr-web' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hr-web-view:before {
+  content: "\e910";
+}
+.hr-web-private:before {
+  content: "\e911";
+}
+.hr-web-turkey .path1:before {
+  content: "\e906";
+  color: rgb(216, 0, 39);
+}
+.hr-web-turkey .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.hr-web-turkey .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.hr-web-nation .path1:before {
+  content: "\e909";
+  color: rgb(65, 71, 155);
+}
+.hr-web-nation .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(245, 245, 245);
+}
+.hr-web-nation .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 75, 85);
+}
+.hr-web-nation .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 75, 85);
+}
+.hr-web-nation .path5:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(255, 75, 85);
+}
+.hr-web-nation .path6:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 75, 85);
+}
+.hr-web-nation .path7:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 75, 85);
+}
+.hr-web-language:before {
+  content: "\e905";
+}
+.hr-web-demo:before {
+  content: "\e900";
+}
+.hr-web-salary:before {
+  content: "\e901";
+}
+.hr-web-change-password:before {
+  content: "\e902";
+}
+.hr-web-forgot-password:before {
+  content: "\e903";
+}
+.hr-web-right-arrow:before {
+  content: "\e904";
+}

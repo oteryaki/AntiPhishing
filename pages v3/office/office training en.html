@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="../assets/"
+      data-template="vertical-menu-template-free">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Oops! That was Phishing!</title>
+    <meta name="description" content="" />
+
+    <style>
+
+        .boxx {
+            width: 64px;
+            height: 64px;
+            margin-top: 96px;
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../template\sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/js/config.js"></script>
+
+    <!-- authwebmail css file-->
+    <script type="text/javascript">
+        function resizeIframe(obj) {
+            obj.style.height = 0;
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/jquery/jquery.js"></script>
+
+    <script src="../../files\anseki-leader-line-6c26a9d\leader-line.min.js"></script>
+    <script>
+        function createLeader() {
+            const elmTarget1 = document.getElementById('startt');
+            const elmTarget2 = document.getElementById('end1');
+            const elmTarget3 = document.getElementById('phishing-frame').contentWindow.document.getElementById('signin-button');
+            const elmTarget4 = document.getElementById('end3');
+            const elmTarget5 = document.getElementById('phishing-frame').contentWindow.document.getElementById('password');
+            const elmTarget6 = document.getElementById('end2');
+            new LeaderLine({ start: elmTarget1, end: elmTarget2 });
+            new LeaderLine({ start: elmTarget3, end: elmTarget4 });
+            new LeaderLine({ start: elmTarget5, end: elmTarget6 });
+        }
+
+    </script>
+    <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
+
+</head>
+<body onload="createLeader()">
+    <main id="content" role="main">
+
+        <div class="content-wrapper">
+            <!-- Content -->
+            <div class="w-md-80 w-lg-70 text-center mx-md-auto mb-md-9">
+                <h1 class="mb-3 text-danger">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="70" , heigth="70" src="../../warning.png" class="img-fluid" alt="Responsive image">Stop! That was a phishing website!
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">English</button>
+                        <ul class="dropdown-menu" style="">
+                            <li><a class="dropdown-item" href="./google web tr.html">Türkçe</a></li>
+                        </ul>
+                    </div>
+                </h1>
+                <p class="lead">This was an authorised phishing simulation run as part of a security awareness training exercise.</p>
+            </div>
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+
+                <div class="row">
+                    <!-- Basic -->
+                    <div class="col-md-6 ">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h5 class="card-header">Website</h5>
+                                </div>
+                                <div class="col-md-5">
+                                    <div id="sender-div" class="mt-4">
+                                        <h5 id="startt" class="mx-2">  URL: www.off1ce.com</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="divider">
+                                    <div class="embed-responsive embed-responsive-4by3 border">
+                                        <div id="iframe-div1">
+                                            <iframe scrolling="no" id="phishing-frame" style="width: 100%;" height=" 550" src="officeT.html"></iframe>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="end1" style="text-align:center;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Phishing websites often have URLs similar to legitimate websites but with slight variations. Microsoft Office's official URL is 'www.office.com', but in this example it was 'www.off1ce.com'.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="card mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="end2" style="text-align:center;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       If you're not sure whether the login page you're on is legitimate, you should not fill in your private information.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="card mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="end3" style="text-align:center;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Before clicking on any buttons, you should always hover over the hyperlink/buttons to see the URL that you will be redirected to. Make sure the URL is from the real website, "www.office.com"</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div id="ex-020-c" class="boxx" style="position:absolute; left: 100px; top: 160px;"></div>
+    <div id="ex-020-b" class="boxx" style="position: absolute; left: 500px; top: 600px;"></div>
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/js/bootstrap.js"></script>
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <!-- Main JS -->
+    <script src="../../template\sneat-bootstrap-html-admin-template/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

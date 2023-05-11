@@ -1,0 +1,1677 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Login CSS Start */
+
+.container #overlay {
+	background: url(https://corporate.adcb.com/corporateWeb/images/login-disable-bottom-curve.gif) #d7d7d7 no-repeat -4px bottom;
+	position: absolute;
+	left: 2px;
+	height: 137px;
+	_height: 145px;
+	padding-bottom:8px;
+	width: 572px;
+	z-index: 100;
+}
+
+.container #loginoverlay {
+	background-color:#D7D7D7;
+	float:left;
+	height:185px;
+	_height: 186px;
+	left:2px;
+	padding-bottom:8px;
+	position:absolute;
+	top:13px;
+	width:572px;
+	z-index:100;
+}
+
+#main-wrapper {
+	margin: 0 auto 0 5%;
+	/*width: 908px;*/
+	width: 908px;
+	
+	
+	
+}
+
+.login {
+	float: left;
+	padding-right: 30px;
+	position: relative;
+	width: 577px;
+	
+}
+
+.logintop {
+	background:url(https://corporate.adcb.com/corporateWeb/images/login-top-curve.gif) no-repeat 0 0;
+	float: left;
+	height: 45px;
+	width: 577px;
+}
+
+.loginbottom {
+	background:url(https://corporate.adcb.com/corporateWeb/images/login-bottom-curve.gif) no-repeat 0 0;
+	float: left;
+	height: 17px;
+	width: 577px;
+}
+
+.logincontent {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-login-content.gif) repeat-y 0 0;
+	float: left;
+	padding: 0 5px;
+	position: relative;
+	width: 575px;
+	
+}
+
+.logincontent h2 {
+	background: url(../../adcb/bg-border.gif) repeat-x 7px bottom;
+	color: #a00101;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	float: left;
+	margin: -18px 0 0 0;
+	padding: 0 0 15px 13px;
+	/*left: 7px;*/
+	position: relative;
+	/*position: absolute;
+	top: 0;*/
+	width: 549px;
+	z-index: 1;
+}
+
+.logincontent .username {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg-border.gif) repeat-x 7px bottom;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	float: left;
+	padding: 22px 7px 0 7px;
+	position: relative;
+	z-index: 0;
+}
+
+.logincontent .token {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	float: left;
+	padding: 27px 7px 0 7px;
+	position: relative;
+	z-index: 0;
+}
+
+.logincontent .username .usercontent, .logincontent .token .tokencontent {
+	float: left;
+	font-size: 1.2em;
+	width: 314px;
+	
+}
+
+.logincontent .username .usercontent .buttons, .logincontent .token .tokencontent .buttons {
+	float: left;
+	padding: 0 0 23px 110px;
+}
+
+.logincontent .username .usercontent .buttons input {
+	cursor: pointer;
+}
+
+.logincontent .username .usercontent .buttons input.submit {
+	padding-right: 13px;
+}
+
+.logincontent .username .usercontent .field, .logincontent .token .tokencontent .field {
+	float: left;
+	padding-bottom: 15px;
+	width: 318px;
+	
+}
+
+.logincontent .username .usercontent .field label, .logincontent .token .tokencontent .field label {
+	float: left;
+	padding: 0px 0px 0 0;
+	text-align: left;
+	width: 97px;
+	
+	
+	
+}
+
+.logincontent .username .usercontent .field .input-wrapper {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg-username-input.gif) no-repeat 0 0;
+	float: left;
+	padding: 2px 0 8px 2px;
+	width: 211px;
+}
+
+.logincontent .token .tokencontent .field .input-wrapper {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg-token-input.gif) no-repeat 0 0;
+	float: left;
+	padding: 2px 0 15px 2px;
+	width: 175px;
+}
+
+.logincontent .token .tokencontent .field .help {
+	float: left;
+	padding: 2px 0 0 8px;
+}
+
+.logincontent .token .tokencontent .field .input-wrapper input {
+	background: none;
+	border: none;
+	width: 172px;
+	height:26px;
+}
+
+.logincontent .username .usercontent .field .input-wrapper input {
+	background: none;
+	border: none;
+	width: 207px;
+	height:26px;
+}
+
+.logincontent .username .steps, .logincontent .token .steps {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg-login-arrow.gif) no-repeat 0 9px;
+	color: #6d6d6d;
+	float: right;
+	padding: 0 0 45px 0;
+	width: 223px;
+	
+}
+
+.logincontent .username .steps p {
+	font-size: 1.1em;
+	line-height: 19px;
+	padding: 10px 10px 0 62px;
+	position: static;
+	z-index: -1;
+}
+
+.logincontent .token .steps p {
+	font-size: 1.1em;
+	line-height: 19px;
+	padding: 0 10px 0 62px;
+	position: static;
+	z-index: -1;
+}
+
+.addn-inform {
+	float: left;
+	width: 287px;
+}
+
+.addn-inform-top {
+	background:url(https://corporate.adcb.com/corporateWeb/images/addn-inform-top-curve.gif) no-repeat 0 0;
+	height: 40px;
+	width: 287px;
+}
+
+.addn-inform-bottom {
+	background:url(https://corporate.adcb.com/corporateWeb/images/addn-inform-bottom-curve.gif) no-repeat 0 0;
+	height: 18px;
+	width: 287px;
+}
+
+.addn-inform-content {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-addn-inform-content.gif) repeat-y 0 0;
+	width: 287px;
+}
+
+.addn-inform-content ul {
+	font-size: 1.2em;
+	padding: 37px 0 40px 21px;
+}
+
+.addn-inform-content ul li {
+	background: url(https://corporate.adcb.com/corporateWeb/images/arrow.gif) no-repeat 0 4px;
+	color: #323232;
+	padding: 0 0 20px 20px;
+}
+
+.addn-inform-content ul li a {
+	color: #323232;
+}
+
+.addn-inform-content h2 {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg-border.gif) repeat-x 7px bottom;
+	color: #a00101;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	margin: -14px 7px 0 7px;
+	padding: 0 0 15px 13px;
+	position: absolute;
+	width: 260px;
+}
+
+/* Login CSS End */
+
+/* Summary CSS Start */
+
+.main-container h2 {
+	color: #990101;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 5px 0 15px 0;
+}
+.main-container-h123 {
+	color: #990101;
+	padding: 5px 0 15px 0;
+}
+.moveright input{
+	float: right!important;
+}
+.summary-content {
+	color: #464646;
+}
+.main-container-h13 {
+	margin: 0 auto;
+	/*background: transparent url(https://corporate.adcb.com/corporateWeb/images/bg-content-title.gif) repeat-x scroll 0 0;*/
+	background:#e5e5e5;
+	border: 1px solid #CCCCCC;
+	color: #990101;
+	font-size: 1.4em;
+	/*padding:3px 0 9px 9px;*/
+	padding:7px 0 7px 9px;
+	width:auto;
+	/*height: 8px;*/
+}
+.vl {
+border-left: 2px solid black;
+  height: auto;
+}
+.summary-content ul li {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg_expandcollapse_li.gif) repeat-x 0 0;
+	
+	border: 1px solid #cccccc;
+	float: left;
+	margin-bottom: 9px;
+	width: 752px;
+}
+
+.summary-content ul li h3 {
+	background: url(https://corporate.adcb.com/corporateWeb/images/icon-plus.gif) no-repeat 715px 3px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 9px 0 7px 11px;
+}
+
+.summary-content ul li h3.active {
+	background: url(https://corporate.adcb.com/corporateWeb/images/icon-minus.gif) no-repeat 715px 3px;
+	border: none;
+}
+
+.summary-content ul li .content {
+	float: left;
+	width: 752px;
+
+}
+
+.summary-content ul li .content table {
+	font-size: 8pt;
+	/*border-bottom: 1px solid #c9c9c9;*/
+	width: 752px;
+	color: #464646
+}
+.righttext{
+    padding: 11px 8px 11px 0 !important;
+    text-align: right !important;
+    border-right:1px solid #c9c9c9;
+}
+
+.lefttexttransumm{
+    padding: 11px 8px 11px 0 !important;
+    text-align: left !important;
+    border-right:1px solid #c9c9c9;
+    white-space:nowrap;
+    
+}
+
+
+
+.noborder{
+	border-bottom: 0 !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+
+
+
+.righttextbold{
+	border-top: 1px solid #c9c9c9;
+    padding: 11px 11px 11px 0 !important;
+    text-align: right !important;
+    font-weight: bold;
+     border-right:none!important;
+     font-size: 1em;
+}
+.summary-content ul li .content table a{
+	font-size:1em ;
+	color: #464646
+}
+.summary-content ul li .content table tr th {
+	background-color: #f4f4f4;
+	border-right: 1px solid #eaeaea;
+	font-weight: normal;
+	padding: 13px 3px 9px 3px;
+	text-align: center;
+}
+
+.summary-content ul li .content table tr th.lastcol {
+	border-right: none;
+}
+
+.summary-content ul li .content table tr td {
+	border-right: 1px solid #eaeaea;
+	padding: 0 2px ;
+	text-align: left;
+	font-size: 8pt;
+}
+
+.summary-content ul li .content table tr td .dataval{
+	
+	padding: 0 2px ;
+	
+	font-size: 8pt;
+}
+
+.summary-content ul li .content table tr td.lastcol {
+	border-right: none;
+	
+	padding: 0 25px 0 0;
+}
+
+.summary-content ul li .content .total {		
+	font-size: 1em;
+	padding: 11px 0 11px 0;
+	_padding: 0px 0 11px 0;
+}
+.summary-content ul li .content .total .totalwrap{float: right}
+.summary-content ul li .content .total p {
+	
+	font-weight: bold;
+	padding: 0 25px 0 0;	
+}
+
+/* Summary CSS End */
+
+/* Listing CSS Start */
+
+.checkbox{
+	
+	margin: 0 15px 5px 0;
+}
+.listing-content {
+	
+	float: left;
+	width: 100%;
+}
+
+.dynamic-content tr td {
+	font-size: 0.9em;
+	
+}
+
+.entrytd{
+	font-size: 8pt;
+	/*float: left;*/
+	padding: 7px 10px 10px 7px;
+	vertical-align: middle;
+	
+	/*width: 752px;*/
+	}
+
+	.entrytdDynamic{
+		font-size: 8pt;
+		/*float: left;*/
+		padding: 7px 6px 10px 7px;
+		vertical-align: top;
+		
+		/*width: 752px;*/
+		}
+	
+	.entrytd1{
+	font-size: 8pt;
+	float: left;
+	padding: 7px 10px 10px 7px;
+	vertical-align: middle;
+	
+	/*width: 752px;*/
+	}
+	
+.srLinkentrytd1 {
+	font-size: 8pt;
+	float: left;
+	padding: 7px 10px 10px 7px;
+	vertical-align: middle;
+
+	/*width: 752px;*/
+}
+
+.entrytdName{
+	float: left;
+	width: 250px;
+	}
+
+.entrytdCode{
+	float: left;
+	width: 180px;
+	}
+	
+.entrytdDate{
+	float: left;
+	width:85px;
+	}
+
+.listentry{
+	font-size: 8pt;
+	}
+.listing-content input, .listing-content select {
+	float: left;
+	margin: 0 5px 5px 0;
+	font-size: 8pt;
+	
+}
+
+
+
+.listing-content input.go {
+	padding: 0 0 0 2px;
+	float: left;
+}
+
+.listing-content .pagination {
+	font-size: 8pt;
+	margin: 0 5px 5px 0;	 
+	padding: 10px 0 2px 0;
+	text-align: right;
+}
+.listing-content .pagination h6{
+	font-size: 1.0em;
+	float: left;
+	margin: 0 5px 5px 0;
+	font-weight: normal; 		
+}
+.listing-content .pagination select {
+	float: left;
+	margin: 0 5px 5px 0;	
+}
+.listing-content .pagination p{
+	font-size: 1.0em;
+	float: left;
+	margin: 0 5px 5px 0;	
+}
+
+.listing-content table {
+	font-size: 1.2em;
+	border-bottom: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	width: 100%;
+}
+
+.listing-content table tr th {
+	background-color: #f4f4f4;
+	border-right: 1px solid #CCCCCC;
+	font-weight: bold;
+	padding: 5px 4px 5px 4px;
+	text-align: left;
+	font-size:8pt;
+}
+
+.listfont{
+	border-right:1px solid #CCCCCC;
+	padding:5px 5px;
+	text-align:left ! important;
+	/*font-size: 0.9em;*/
+	color: #464646;
+}
+
+.listfont2{
+	border-right:1px solid #CCCCCC;
+	padding-right:3px;
+	text-align:right ! important;
+	color: #464646;
+}
+
+.listfontOnscreen{
+	text-align:left ! important;
+	/*font-size: 0.9em;*/
+	color: #464646;
+}
+
+.listfont a{
+	color: #464646;
+}
+
+.listing-content table tr th.lastcol {
+	border-right: none;
+}
+
+
+.listing-content table tr td a {
+	color: #000;
+}
+
+.listing-content table tr td.lastcol {
+	border-right: none;
+	text-align: right;
+	padding: 0 25px 0 0;
+	
+}
+
+.listing-content .view-entries {
+	font-size: 0.85em;
+	padding: 5px 0 0 14px;
+	/*width: 634px;*/
+}
+
+.belowLink{
+	/*font-size: 0.8em;*/
+	padding: 5px 0 0 14px;
+	}
+.belowLink a{
+	color: #000;
+	display: block;
+	padding-bottom: 5px;
+}	
+.listing-content .view-entries a {
+	color: #000;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.listing-content .next-prev {
+	float: right;
+	padding: 5px 0 0 0;
+	/*width: 122px;*/
+}
+.listing-content .next-prev-wrap{
+	float: right;
+}
+.listing-content .next-prev input {
+	/*cursor: pointer;*/
+	float: none;
+	/*width: 58px;*/
+	
+	
+}
+
+.listing-content .next-prev input.next {
+	float: right;
+	margin: 0;
+}
+
+/* Listing CSS End */
+
+/* Entry Screen CSS Start */
+
+.entry-screen-container {
+	float: left;
+	width: 754px;
+	margin-bottom:30px;
+}
+
+.entry-screen-container p {
+	/*font-size: 1.2em;*/
+}
+
+.entry-screen-container p span {
+	color: #ff0000;
+}
+
+.entry-screen-container .submitbtn {
+	float: right;
+	padding-bottom: 10px;
+}
+
+.entry-screen-container .submitbtn input {
+	padding: 0 5px 0 0;
+}
+
+.details-content {
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc!important;
+	border-bottom: 1px solid #cccccc;
+	/*float: left;*/
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	width: 754px;
+	
+}
+.details-content1 table tr td{
+	border-left: 1px solid #cccccc !important;
+	border-right: 1px solid #cccccc !important;
+	border-bottom: 1px solid #cccccc!important;
+	
+	/*float: left;*/
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	width: 754px;
+	
+}
+.details-content2{
+	border-left: 1px solid #cccccc !important;
+	border-right: 1px solid #cccccc !important;
+	border-bottom: 1px solid #cccccc !important;
+	border-top: 1px solid #cccccc !important;
+	/*float: left;*/
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	width: 754px;
+	
+}
+
+.details-content .col1-2, .details-content .col2-2 {
+	/*float: left;*/
+	padding: 10px 0 0 10px;
+	width: 366px;
+}
+table td input{
+	font-size: 8pt;
+}
+.details-content .col1-2 .field, .details-content .col2-2 .field {
+	float: left;
+	padding-bottom: 10px;
+	width: 366px;
+}
+
+.details-content .col1-2 .field span, .details-content .col2-2 .field span {
+	color: #ff0000;
+	float: left;
+	padding: 0 0 0 5px;
+}
+
+.details-content .col1-2 .field span.calendar, .details-content .col2-2 .field span.calendar {
+	float: left;
+	padding: 3px 0 0 5px;
+}
+
+.details-content .col1-2 .field label, .details-content .col2-2 .field label {
+	float: left;
+	width: 125px;
+}
+
+.details-content .col1-2 .field input, .details-content .col2-2 .field input {
+	float: left;
+	font-size: 0.9em;
+}
+
+.details-content .col1-2 .field textarea, .details-content .col2-2 .field textarea {
+	height: 60px;
+	width: 200px;
+}
+
+/* Entry Screen CSS End */
+
+/* Finance Advice CSS Start */
+
+.finance-content {
+	width: 752px;
+}
+
+.finance-content p {
+	font-size: 1.2em;
+	padding: 0 0 18px 16px;
+}
+
+.paddingtop {
+	padding: 17px 0 0 0;
+}
+
+.inner-content {
+	background-color: #f4f4f4;
+	color: #464646;
+	width: 754px;
+}
+
+.inner-content p {
+	float: left;
+	padding: 10px 0 13px 11px;
+}
+
+.inner-content p.alignright {
+	float: right;
+	padding: 10px 10px 13px 0;
+}
+
+.customer-details {
+	border: 1px solid #cccccc;
+	width: 510px;
+}
+
+.customer-details tr td {
+	padding: 10px 0;
+}
+
+.customer-details tr.alt {
+	background-color: #f4f4f4;
+	width: 510px;
+}
+
+.customer-details tr.whitebg td {
+	padding: 12px 0 11px 0;
+}
+
+.customer-details tr.alt td label, .customer-details tr.whitebg td label {
+	font-size: 1.2em;
+	padding: 0 0 0 16px;
+}
+
+/* Finance Advice CSS End */
+
+/* Home page CSS Start */
+
+.home-container {
+	margin: 0 auto;
+	
+	
+}
+
+.banner {
+	margin: 0 auto;
+	
+}
+/* changes by benazeer pasha : to removed freeway*/
+.bottom-container {
+	float: left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	/*padding: 35px 0 0 0;*/
+	position: relative;
+	width: 960px;;
+	
+}
+
+.column1_3 {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-border-right.gif) repeat-y right 0;
+	color: #010000;
+	float:left;
+	margin: 10px 0 72px 0;
+	padding: 5px 0 24px 0;
+	width: 300px;
+
+}
+
+.column2_3 {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-border-right.gif) repeat-y right 0;
+	color: #010000;
+	float:left;
+	margin: 10px 0 72px 0;
+	padding: 5px 0 49px 20px;
+	width: 300px;
+}
+/* end changes by benazeer pasha : to removed freeway*/
+.column3_3 {
+	color: #010000;
+	float:left;
+	margin: 10px 0 0 0;
+	padding: 5px 6px 72px 20px;
+	width: 213px;
+
+	
+}
+
+/* Modified & Added by sunita on 23/5/2011 */
+.column1_3 .btn, .column2_3 .btn {
+	position: relative;
+	padding: 13px 0 21px 0;
+}
+.column3_3 .btn {
+	position: relative;
+	padding-bottom: 21px;
+}
+.column1_3 h5, .column2_3 h5, .column3_3 h5 {
+	padding: 0 0 10px 0;
+	font-size: 1.1em;
+}
+/* Modified & Added by sunita on 23/5/2011 */
+
+.column1_3 p, .column2_3 p, .column3_3 p {
+	font-size: 1.1em;
+	padding: 15px 23px 20px 0;
+}
+.column1_3 ul li, .column2_3 ul li, .column3_3 ul li {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bullet-black.gif) no-repeat 0 5px;
+	font-size: 1.1em;
+	padding: 0 19px 15px 10px;
+}
+
+/*
+.column1_3 .btn {
+	position: absolute;
+	bottom: 146px;
+	_bottom: 74px;
+}
+
+.column2_3 .btn {
+	position: absolute;
+	bottom: 146px;
+	_bottom: 74px;
+}
+
+.column1_3 p, .column2_3 p, .column3_3 p {
+	font-size: 1.1em;
+	padding: 15px 23px 20px 5px;
+}
+
+.column1_3 ul li, .column2_3 ul li, .column3_3 ul li {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bullet-black.gif) no-repeat 0 5px;
+	font-size: 1.1em;
+	padding: 0 10px 17px 10px;
+	
+}*/
+
+.latest-news {
+	float: right;
+	width: 240px;
+	padding-top: 15px;
+	
+}
+
+.latest-news .top-curve {
+	background:url(https://corporate.adcb.com/corporateWeb/images/latest-top-curve.gif) no-repeat 0 0;
+	height: 15px;
+	width: 240px;
+}
+.backgroundnone{
+	background: none!important;
+}
+.latest-news .bottom-curve {
+	background:url(https://corporate.adcb.com/corporateWeb/images/latest-bottom-curve.gif) no-repeat 0 0;
+	height: 15px;
+	width: 240px;
+}
+
+.latest-news .latest-content {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-latest-grad.gif) #ededed repeat-x 0 0;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+}
+
+.latest-news .latest-content h4 {
+	background: url(https://corporate.adcb.com/corporateWeb/images/latest-border.gif) no-repeat 0 bottom;
+	padding: 2px 0 23px 15px;
+}
+.latest-news .latest-content h4.headingtitle {
+	font-family: arial;
+	font-size: 13pt;
+	color: #ff0000;
+}
+
+.latest-news .latest-content ul {
+	padding: 20px 10px 0 13px;
+}
+
+.latest-news .latest-content ul li {
+	background: url(https://corporate.adcb.com/corporateWeb/images/arrow-red.gif) no-repeat 0 2px;
+	font-size: 1.0em;
+	font-family : Verdana, Arial, Helvetica, sans-serif ! important;
+	padding: 0 0 20px 15px;
+}
+
+.latest-news .latest-content a {
+	background: url(https://corporate.adcb.com/corporateWeb/images/arrow-double.gif) no-repeat right 3px;
+	color: #a50000;
+	padding: 0 11px 0 13px;
+	text-transform:uppercase;
+}
+
+/* Home page CSS End */
+
+/*--------------------Implemented by Ganesh 2/2/2010 ----*/
+.main-container .addEntrytxt { 
+	background:url(https://corporate.adcb.com/corporateWeb/images/inner_headerbg.gif) no-repeat; 
+	height:35px; 
+	width:753px;
+}
+
+.main-container .addEntrytxt p.txt { 
+	font-size:1.3em; 
+	font-weight:bold; 
+	color:#464646; 
+	padding:9px 0 9px 15px;
+}
+
+.main-container .corporate_tab { 
+	float:left; 
+	padding-top:-10px; 
+	width:750px; 
+	margin-left:3px;
+}
+
+.main-container .corporate_tab ul {
+        background:url(https://corporate.adcb.com/corporateWeb/images/tab_border.gif) no-repeat 2px 30px;
+        float:left;
+        clear:both;
+        margin: 0 0 0 6px;
+        width: 750px;
+}
+
+
+.main-container .corporate_tab ul li { 
+	float:left; 
+	font-size:1.4em; 
+	font-weight:bold; 
+	color:#6d6b6b; 
+	
+}
+
+.main-container .corporate_tab ul li a { 
+	background:url(https://corporate.adcb.com/corporateWeb/images/tab_unsel.gif) 0px -28px no-repeat; 
+	float:left; 
+	color:#6d6b6b; 
+	padding:15px 0 0 6px; 
+	cursor:pointer 
+}
+
+.main-container .corporate_tab ul li a span { 
+	float:left; 
+	background:url(https://corporate.adcb.com/corporateWeb/images/tab_unsel.gif) right 1px no-repeat; 
+	height:22px; 
+	padding:6px 9px 0 4px; 
+	margin-top:-15px; 
+	cursor:pointer 
+}
+
+.main-container .corporate_tab ul li a:hover { 
+	background:url(https://corporate.adcb.com/corporateWeb/images/tab_sel.gif) 0px -28px no-repeat; 
+	float:left; 
+	color:#6d6b6b; 
+	padding:15px 0 0 6px; 
+	cursor:pointer; 
+	text-decoration:none; 
+	color:#000000; 
+	font-weight:bold; 
+}
+
+.main-container .corporate_tab ul li a:hover span { 
+	float:left; 
+	background:url(https://corporate.adcb.com/corporateWeb/images/tab_sel.gif) right 1px no-repeat; 
+	height:22px; 
+	padding:6px 9px 0 4px; 
+	margin-top:-15px; 
+	cursor:pointer; 
+}
+
+.main-container .corporate_tab ul li a.sel { 
+	background:url(https://corporate.adcb.com/corporateWeb/images/tab_sel.gif) 0px -28px no-repeat; 
+	float:left; 
+	color:#6d6b6b; 
+	padding:15px 0 0 6px; 
+	cursor:pointer; 
+	text-decoration:none; 
+	color:#000000; 
+	font-weight:bold; 
+}
+
+.main-container .corporate_tab ul li a span.sel { 
+	float:left; 
+	background:url(https://corporate.adcb.com/corporateWeb/images/tab_sel.gif) right 1px no-repeat; 
+	height:22px; 
+	padding:6px 9px 0 4px; 
+	margin-top:-15px; 
+	cursor:pointer; 
+}
+
+.main-container .corporate_tab p.text { 
+	font-size:1.2em; 
+	padding:15px 12px; 
+	display:none 
+}
+
+.main-container .corporate_tab .mappingBox { 
+	border-left:1px solid #cdcdcd; 
+	border-right:1px solid #cdcdcd; 
+	border-bottom:1px solid #cdcdcd; 
+	float:left; 
+	width:742px; 
+	margin-left:2px; 
+	_margin-left:1px; 
+	display:none
+}
+
+.main-container .corporate_tab .mappingBox .mapInner { 
+	float:left; 
+	padding:20px; 
+	width:700px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner p.redTxt { 
+	font-size:1.2em; 
+	color:#ad3434; 
+	font-weight:bold; 
+	clear:both
+}
+
+.main-container .corporate_tab .mappingBox .mapInner img.hrline { 
+	padding-top:12px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements { 
+	float:left; 
+	padding:10px 0 40px 0; 
+	width:333px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .endDate { 
+	width:363px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements label { 
+	color:#323232; 
+	float:left; 
+	font-size:1.2em; 
+	padding-top:5px; 
+	width:76px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements .inputdiv {
+	background:url(https://corporate.adcb.com/corporateWeb/images/map_inputbg.gif) no-repeat; 
+	height: 25px;
+	float: left;
+	width: 41px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements .inputdiv input { 
+	background: none;
+	border:0px; 
+	width:38px; 
+	padding:3px 1px; 
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements span { 
+	float:left; 
+	padding: 5px 5px
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements span.mandatory {
+	color: #ff0000;
+	font-size: 1.2em;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner .frmElements img.addBtn { 
+	padding-top:2px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner table.mapTbl { 
+	width:650px; 
+	float:left; 
+	border:1px solid #cdcdcd; 
+	margin-top:8px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner table.mapTbl tr.headBg { 
+	background: #f4f4f4;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner table.mapTbl tr.headBg th { 
+	font-size:1.2em; 
+	font-weight:normal; 
+	padding:6px 0 6px 15px; 
+	border-right:1px solid #cdcdcd; 
+	text-align:left
+}
+
+.main-container .corporate_tab .mappingBox .mapInner table.mapTbl tr td { 
+	font-size:1.2em; 
+	font-weight:normal; 
+	padding:10px 0; 
+	border-right:1px solid #cdcdcd; 
+	padding:10px 15px;
+}
+
+.main-container .corporate_tab .mappingBox .mapInner table.mapTbl tr td a { 
+	color:#464646; 
+	text-decoration:none
+}
+
+.main-container .corporate_tab .mappingBox .btm_bg { 
+	clear:both; 
+	width:742px; 
+	padding:10px 0 5px; 
+	background:#f4f4f4
+}
+
+.main-container .corporate_tab .mappingBox .btm_bg p { 
+	font-size:1.1em; 
+	width:580px; 
+	float:left; 
+	padding-left:18px
+}
+
+.main-container .corporate_tab .mappingBox .btm_bg p span {
+	color: #ff0000;
+	font-size: 1.2em;
+}
+.recordcount{
+	width: 50px;
+	text-align: right;
+}
+.bigamount{
+	width: 105px;
+	text-align: right;
+	
+}
+
+/* Test */
+
+.summary-content {
+	background: url(https://corporate.adcb.com/corporateWeb/images/bg_expandcollapse_li.gif) repeat-x 0 0;
+	border: 1px solid #cccccc;
+	float: left;
+	margin-bottom: 9px;
+	width: 755px;
+}
+
+.summary-content tr td h3 {
+	
+	border: none;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 9px 0 7px 11px;
+}
+
+.summary-contentwid tr td h3 {
+	border: none;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 9px 0 7px 11px;
+}
+
+.summary-content .content { 
+	
+	width: 752px;
+}
+.summary-content .content table {
+	font-size: 1.1em;
+	/*border-bottom: 1px solid #c9c9c9;*/
+	width: 752px;
+	color: #464646;
+	
+}
+
+.summary-content .content table tr th {
+	background-color: #f4f4f4;
+	border-right: 1px solid #eaeaea;
+	font-weight: normal;
+	padding: 13px 3px 9px 3px;
+	text-align: center;
+}
+
+.summary-content .content table tr th.lastcol {
+	border-right: none;
+}
+
+.summary-content .content table tr td {
+	border-right: 1px solid #eaeaea;
+	padding: 10px 0;
+	text-align: left;
+}
+
+.summary-content .content table tr td.lastcol {
+	border-right: none;
+	text-align: left;
+	padding: 0 25px 0 0;
+}
+
+.summary-content .content .total {
+	float: right;
+	font-size: 1.2em;
+	padding: 11px 0 20px 0;
+}
+
+.summary-content .content .total p {
+	float: left;
+	font-weight: bold;
+	padding: 0 25px 0 0;
+}
+.norecordtext{font-size: 1em;font-weight: bold}
+/* end of test*/
+
+
+/*--------------------Implemented by Ganesh 2/2/2010 ----*/
+.cols_3 {
+	font-size: 1.2em;
+	border-bottom: 1px solid #c9c9c9;
+	width: 754px;
+}
+.cols_3 tr td.lastcol {
+	border-right: none;
+	text-align: left;
+	padding: 0 25px 0 0;
+}
+.details-content .cols_3 tr td {
+	border:none!important;
+	/*padding: 10px 0;*/
+	text-align: left;
+}
+.cols_3 tr td p {
+	float: left;
+	margin:2px 0 0 0;
+	padding: 0 15px 0 54px;
+	
+}
+.cols_3 input, .cols_3 select {
+	float: left;
+	margin: 2px 0 0 54px;
+}
+.cols_3 button {
+	font-family:Arial,Verdana, Helvetica, sans-serif;
+	font-size:8pt;
+	color:#FFFFFF;
+	background-color: #757678;
+	border: 1px solid #000000;
+	margin: 0px;
+	height: 19px;
+}
+.cols_3 span {
+	color: #FF0000;
+	float:left;	
+	padding: 4px 0 0 7px;
+}
+.cols_4 {
+	/*font-size: 1.0em;*/
+	border-bottom: 1px solid #c9c9c9;
+	width: 754px;
+}
+.validatetextbox{
+	float: left;
+}
+.validatetextbox input,.validatetextbox span{
+	float: none!important;	
+}
+.validatetextbox span{
+	padding-left: 0px!important;
+}
+.btntableright{
+	float: right;
+	margin-right: 45px;
+}
+.label1{
+	/*font-size: 0.9em!important;	*/
+}	
+.cols_4 tr td.lastcol {
+	border-right: none;
+	text-align: right;
+	padding: 0 25px 0 0;
+}
+.details-content .cols_4 tr td {
+	border:none!important;
+	padding: 8px 0 5px 5px;
+	text-align: left;
+	/*font-size: 0.8em;	*/
+}
+.cols_4 tr td p {
+	float: left;
+	margin:3px 0 0 21px;
+	padding: 0 20px 0 0;
+}
+.cols_4 text1, .cols_4 select {
+	float: left;
+	margin: 3px 0px 0 17px;
+}
+.cols_4 span {
+	color: #FF0000;
+
+	padding: 0 0 0 5px;
+}
+table tr td select{
+	font-size: 8pt;
+}
+.tdheading {
+	border: 1px solid #CCCCCC;
+}
+.tdheading h3{
+	border: none;
+}
+.cols_4_1{
+	width: 755px;
+	border-bottom: 1px solid #C9C9C9;
+}
+.fieldname{
+	width: 208px;
+}
+.fieldcode{
+	width: 160px;
+}
+.fielddefault{
+	width: 125px;
+}
+.fielddate{
+	width: 80px;
+}
+.fieldcurrency 
+	{
+	width: 100px;
+	}
+.searchimg{
+	float: left;
+	padding-left: 3px;
+}
+.selectfieldname{
+	width: 217px;
+}
+.selectaccountno{
+	width: 217px;
+}
+.selectcid{
+	width: 160px;
+}
+.selectdefault{
+	width: 100px;
+	}
+.selectlayout{
+	width: 260px;
+}
+.spacetable tr td{
+	padding-bottom: 10px;
+}
+.btnclearboth{
+	clear: both
+}
+.pageno p{float: left;padding:4px 5px 0 0;}
+
+.box{
+	color: black;
+	background: url() no-repeat -36px -18px !important;
+	float: left;
+	height: 31px;
+	padding: 8px 0 0 0;
+	border:1px solid #CCCCCC;
+	}
+	
+	.summary-content p.intro {
+	font-size:  8pt;
+	padding: 10px 10px 5px
+}
+.summary-content p.intro img {
+	float: left;
+	padding: 0 10px 10px
+}
+.summary-content ul li ul.points {
+	float: left;
+	padding: 10px;
+	width: 730px;
+}
+.summary-content ul li ul.points li {
+	background: url(https://corporate.adcb.com/corporateWeb/images/arrow_black.gif) no-repeat left 4px;
+	border: none;
+	font-size:  8pt;
+	float: left;
+	margin: 0;
+	padding: 0 0 7px 15px;
+	width: 715px;
+}
+.summary-content ul li ul.points li ul {
+	float: left;
+	padding-top: 10px;
+	width: 715px;
+}
+.summary-content ul li ul.points li ul li {
+	background: url(https://corporate.adcb.com/corporateWeb/images/arrow_gray.gif) no-repeat left 4px;
+	border: none;
+	font-size: 8pt;
+	float: left;
+	margin: 0;
+	padding: 0 0 7px 10px;
+	width: 705px;
+}
+.landing_content {margin:0 auto; padding-top:20px; width:772px;margin-left: 50px}
+.landing_content .top_intro {float:left; padding:0 0 20px}
+.landing_content .top_intro .banner_img {float:left; width:278px}
+.landing_content .top_intro .intro{float:left; padding:8px 0 0; width:494px}
+.landing_content .top_intro .intro h2{float:left; padding:0 0 20px; width:494px}
+.landing_content .top_intro .intro p{color:#323232; font-size:1.2em; font-weight:bold}
+.landing_content .features_benefits {float:left; padding:0 0 20px; width:100%}
+.landing_content .features_benefits h4 {color:#b30502;float:left; font-size:1.5em; padding:15px 0 12px; width:100%}
+.landing_content .features_benefits ul {float:left; width:100%}
+.landing_content .features_benefits ul li {background:url(https://corporate.adcb.com/corporateWeb/images/arrow_black.gif) 7px 4px no-repeat; float:left; font-size:1.2em; padding: 0 0 12px 20px; width:338px}
+.landing_content .features_benefits .left_clm {background: url(https://corporate.adcb.com/corporateWeb/images/vert_divider.gif) right top no-repeat; float:left; padding: 0 0 0 10px; width:380px}
+.landing_content .features_benefits .right_clm {float:left; padding: 0 0 0 24px; width:358px}
+.summary-content ul li .content p.title {color:#d51100; float:left; font-size:1.2em; font-weight: bold; padding:10px 10px 0; width:730px}
+.faqtable td{padding:5px!important}
+.browsefield{width: 170px;height:25px}
+
+
+
+/*CSS Added by Indigo - Sulakshana 12.08.13*/
+.column1_3New {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-border-right.gif) repeat-y right 0;
+	color: #010000;
+	float:left;		
+	/*width: 340px; Commnented on 12 August 2013 by Indigo - Sulakshana*/
+	width: 320px;
+	margin: 10px 0 0
+}
+.column2_3New {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-border-right.gif) repeat-y right 0;
+	color: #010000;
+	float:left;	
+	margin: 10px 0 0 0;
+	padding: 0px 0 0 20px;
+	/*width: 340px; Commnented on 12 August 2013 by Indigo - Sulakshana*/
+	width: 320px;
+}
+
+.column1_3New p, .column2_3New p, .column3_3 p {
+	font-size: 1.1em;
+	padding: 15px 23px 20px 0;
+}
+
+.column3_3_direct_debit {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-border-right.gif) repeat-y right 0;
+	color: #010000;
+	float:left;
+	margin: 10px 0 22px 0;
+	padding: 5px 0 10px 10px;	
+	width: 320px;
+}
+
+.column4_3_ccss {
+	color: #010000;
+	float:left;
+	margin: 10px 0 0 0;
+	padding: 5px 0 10px 20px;	
+	width: 320px;
+}
+.column5_3_lead_initiation {
+	color: #010000;
+	float:left;
+	margin: 10px 0 0 0;
+	padding: 5px 0 10px 20px;	
+	width: 320px;
+}
+.column6_3_dsp {
+	background:url(https://corporate.adcb.com/corporateWeb/images/bg-border-right.gif) repeat-y right 0;
+	color: #010000;
+	float:left;
+	margin: 10px 0 22px 0;
+	padding: 5px 0 10px 10px;	
+	width: 320px;
+}
+.column3_3_direct_debit p {
+	font-size: 1.1em;
+	padding: 20px 23px 0px 0;
+}
+
+.column4_3_ccss p {
+	font-size: 1.1em;
+	padding: 20px 23px 10px 0;
+}
+
+.column5_3_lead_initiation p {
+	font-size: 1.1em;
+	padding: 20px 23px 0px 0;
+}
+.column6_3_dsp p {
+	font-size: 1.1em;
+	padding: 20px 23px 0px 0;
+}
+.column1_3New ul li, .column2_3New ul li, .column3_3_direct_debit ul li, .column4_3_ccss ul li, .column5_3_lead_initiation  ul li, .column6_3_dsp ul li{
+	background:url(https://corporate.adcb.com/corporateWeb/images/bullet-black.gif) no-repeat 0 5px;
+	font-size: 1.1em;
+	padding: 0 19px 15px 10px;
+}
+
+.column3_3_direct_debit .btn {
+	position: relative;
+	padding: 35px 0 21px 0;
+}
+
+.column4_3_ccss .btn {
+	position: relative;
+	padding: 26px 0 21px 0;
+}
+
+.column5_3_lead_initiation .btn {
+	position: relative;
+	padding: 26px 0 21px 0;
+}
+.column6_3_dsp .btn {
+	position: relative;
+	padding: 26px 0 21px 0;
+}
+.column1_3New .btn, .column2_3New .btn{
+	position: relative;
+	padding: 14px 0 21px 0;
+}
+
+.column1_3New h5, .column2_3New h5, .column3_3_direct_debit h5, .column4_3_ccss h5 , .column5_3_lead_initiation h5, .column6_3_dsp h5{
+	padding: 0 0 10px 0;
+	font-size: 1.1em;
+}
+
+.column3_3_direct_debit  h2, .column4_3_ccss h2{
+	font-size:3.5em;
+	color:#115594;
+	}
+
+.column5_3_lead_initiation h2{
+	font-size:2.0em;
+	color:#b70000;
+}
+.column6_3_dsp h2{
+	font-size:2.0em;
+	color:#b70000;
+}
+.bottom-container .bottomLeftcontainer{width:720px; float:left}
+.bottom-container .bottomRightcontainer{width:240px; float:left}
+	
+/*CSS Added by Indigo - Sulakshana 12.08.13*/
+
+   
+ #loading {
+	display: none;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	padding: 16px;
+    width: 250px;
+	z-index:1002;
+	overflow: auto;
+    background-image: url(../../images/loading1.gif);
+    background-repeat: no-repeat
+}
+
+#loadingbck {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=30);
+}
+/* Css Addeded by Indigo - Sulakshana Dated 12.08.13*/
+.landing_content .features_benefits .left_clm {background: url(https://corporate.adcb.com/corporateWeb/images/vert_divider.gif) right top no-repeat; float:left; padding: 0 0 0 10px; width:96%}
+.landing_content .features_benefits ul.directDebit li {background:url(https://corporate.adcb.com/corporateWeb/images/arrow_black.gif) 7px 4px no-repeat; float:left; font-size:1.2em; padding: 0 0 12px 20px; width:96%}
+.landing_content .features_benefits ul.ccss li {background:url(https://corporate.adcb.com/corporateWeb/images/arrow_black.gif) 7px 4px no-repeat; float:left; font-size:1.2em; padding: 0 0 12px 20px; width:96%}
+.landing_content .top_intro .intro h2{float:left; padding:0 0 20px; width:494px; background:none; color:#115594}
+
+.landing_content .features_benefits_protrade {float:left; padding:0 0 20px; width:100%}
+.landing_content .features_benefits_protrade h4 {color:#b30502;float:left; font-size:1.5em; padding:15px 0 12px; width:100%}
+.landing_content .features_benefits_protrade ul {float:left; width:100%}
+.landing_content .features_benefits_protrade ul li {background:url(https://corporate.adcb.com/corporateWeb/images/arrow_black.gif) 7px 4px no-repeat; float:left; font-size:1.2em; padding: 0 0 12px 20px; width:338px}
+.landing_content .features_benefits_protrade .left_clm {background: url(https://corporate.adcb.com/corporateWeb/images/vert_divider.gif) right top no-repeat; float:left; padding: 0 0 0 10px; width:380px}
+.landing_content .features_benefits_protrade .right_clm {float:left; padding: 0 0 0 24px; width:358px}
+
+.banner{padding-top:0px}
+/* Css Addeded by Indigo - Sulakshana Dated 12.08.13*/
+
+
+/* Css Addeded by Archana for Dash board*/
+.dashboard table {
+	font-size: 1.2em;
+	border-bottom: 1px solid #c9c9c9;
+	width: 100%;
+}
+
+
+.dashboard table tr th {
+	background-color: #f4f4f4;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	font-weight: bold;
+	padding: 5px 4px 5px 4px;
+	text-align: left;
+	font-size:8pt;
+	margin-right: 0px;	
+}
+.dashboard table tr td {
+	
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+#browserCompatibleMsg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px;
+	z-index: 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+.tooltipSR {
+  margin-left: -4px;
+  position: absolute;
+  display: inline-block;
+}
+
+.tooltipSR .tooltiptextSR {
+  width: 350px;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 21px;
+  right: 2%;
+  border:1px solid black;
+}
+
+.tooltipSR .tooltiptextSR::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 97%;
+  margin-left: -4px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.tooltipHiddenSR {
+	visibility: hidden;
+}
+
+/* .tooltip:hover .tooltiptext {
+  visibility: visible;
+} */
